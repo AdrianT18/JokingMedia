@@ -111,39 +111,40 @@ a:active {
 @media only screen and (max-width: 480px) {
     .header {
         border-top-right-radius: 80px;
-        border-bottom-left-radius: 80px;
-        padding: 0;
-        height: 25vh;
+        border-bottom-left-radius: 40px;
+        padding: 0 0 0 15px;
+        height: 30vh;
     }
 
     .purple, .white {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .aboutUs-description-1, .aboutUs-description-2 {
-        font-size: 10px;
-        width: 8rem;
+        font-size: 12px;
+        width: 10rem;
         margin: 10px 0 0;
     }
 
     .button-1 {
-        font-size: 8px;
-        margin: 4px;
+        font-size: 10px;
+        margin: 5px;
     }
 
     .bigger {
-        font-size: 6px;
+        font-size:
+                8px;
     }
 
     .scrollDown {
-        margin-top: 5px;
-        width: 8rem;
+        margin-top: 15px;
+        width: 10rem;
     }
 
     .mobilePhone-img {
-        width: 50vw;
-        height: 23vh;
-        margin-top: 25px;
+        width: 55vw;
+        height: 28vh;
+        margin-top: 30px;
         position: -webkit-sticky;
     }
 }
@@ -159,7 +160,6 @@ a:active {
 .offer-box1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .offer-box2 {
     display: flex;
@@ -186,7 +186,7 @@ a:active {
 }
 
 #offer-para {
-    font-family: "Josefin Sans Medium", sans-serif;
+    font-family: "Josefin Sans SemiBold", sans-serif;
     font-size: 35px;
     width: 50rem;
     margin: 10px 0;
@@ -206,11 +206,22 @@ a:active {
 
 #loves {
     font-weight: bold;
-    color: #BD6EFB;
+    color:  #BD6EFB;
+}
+
+.offer-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.offer-btn-2{
+    display: none;
+    visibility: hidden;
 }
 
 .scrollDown-2 {
-    max-width: 40rem;
+    width: 100vh;
 }
 
 .button-2 {
@@ -227,13 +238,13 @@ a:active {
 }
 
 #noOffer {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans ExtraBold", sans-serif;
     font-size: 30px;
     margin: 0 0 10px;
 }
 
 #list {
-    font-family: "Josefin Sans SemiBold", sans-serif;
+    font-family: "Josefin Sans Bold", sans-serif;
     font-weight: bold;
     font-size: 25px;
     margin: 0;
@@ -244,76 +255,94 @@ li {
     margin: 10px 0;
     list-style: none;
 }
-
 li:before {
     content: "\2718";
 }
-.offer-btn{
-    margin-left: 25px;
+
+li span{
+    position: relative;
+    left: 10px;
 }
 
 /* Responsive design for mobile phone*/
 @media only screen and (max-width: 480px) {
     .offer {
         margin-top: 2rem;
-        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .offer-box1{
+        align-items: flex-start;
     }
 
     #offer-title {
-        font-size: 11px;
+        font-size: 16px;
         margin-bottom: 4px;
     }
     #offer-subheading {
-        font-size: 10px;
+        font-size: 18px;
         margin-bottom: 4px;
     }
 
     #offer-quote {
-        font-size: 10px;
+        font-size: 14px;
         margin-bottom: 4px;
-        width: 10rem;
     }
 
     #offer-para {
-        font-size: 10px;
-        width: 10rem;
+        font-size: 14px;
         margin-bottom: 4px;
         margin-top: 4px;
+        width: 23rem;
     }
 
     .button-2 {
-        font-size: 10px;
+        font-size: 16px;
         margin: 4px;
     }
 
     .bigger-2 {
-        font-size: 8px;
+        font-size: 14px;
     }
 
     .scrollDown-2 {
         margin-top: 5px;
-        width: 10rem;
+        width: 18rem;
     }
 
     .offer-box2{
         margin-top: 0;
     }
     #noOffer {
-        font-size: 10px;
+       font-size: 15px;
+        margin-top: 6px;
         margin-bottom: 4px;
+
     }
 
     #offer-para-2 {
-        font-size: 10px;
-        width: 10rem;
+        font-size: 14px;
+        width: 25rem;
     }
 
     #list {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     li {
         margin: 5px 0;
+    }
+    .offer-btn{
+        display: none;
+        visibility: hidden;
+    }
+
+    .offer-btn-2{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        visibility:visible;
     }
 
 }

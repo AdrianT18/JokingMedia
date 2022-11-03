@@ -24,28 +24,38 @@ function App() {
             </div>
 
             <div className="offer">
+                <div>
                 <div className="offer-box1">
                     <h1 id="offer-title">What We Offer</h1>
-                    <h2 id="offer-subheading">Social Media Management</h2>
+                    <h1 id="offer-subheading">Social Media Management</h1>
                     <h3 id="offer-quote">We drive sales with social media content</h3>
                     <p id="offer-para">We do one thing and we do it well. We ensure that we focus on social media
                         content &
                         increasing the social presence of your brand to build a community that <span
                             id="loves">loves</span> your service.</p>
+                </div>
+                    <div className="offer-btn">
                         <a className="scrollDown-2" href="#calandly">
                             <p className="button-2">Speak To Our Team Today <br/>
                                 <span className="bigger-2">Schedule Your FREE Audit Call Now</span></p>
                         </a>
+                    </div>
                 </div>
                 <div className="offer-box2">
-                    <h2 id="noOffer">Only one goal so...</h2>
-                    <p id="offer-para-2">We only offer social media management, we don’t offer:</p>
+                    <h2 id="noOffer">Only One Goal So...</h2>
+                    <p id="offer-para-2">We don't offer any other services except for Social Media Managment...</p>
                     <ul id="list">
-                        <li>Web Design</li>
-                        <li>Email Marketing</li>
-                        <li>PR Service</li>
-                        <li>Paid Ads</li>
+                        <li ><span>Web Design</span></li>
+                        <li><span>Email Marketing</span></li>
+                        <li><span>PR Service</span></li>
+                        <li><span>Paid Ads</span></li>
                     </ul>
+                    <div className="offer-btn-2">
+                        <a className="scrollDown-2" href="#calandly">
+                            <p className="button-2">Speak To Our Team Today <br/>
+                                <span className="bigger-2">Schedule Your FREE Audit Call Now</span></p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
