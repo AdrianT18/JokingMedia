@@ -6,91 +6,233 @@ html, body{
     overflow-x: hidden;
 }
 
-/* Header section */
-.header{
+/* Header section Main*/
+.header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #191818;
     border: 2px solid #191818;
     border-top-right-radius: 200px;
     border-bottom-left-radius: 200px;
-    width: 100vw;
-    max-height: 550px;
+    min-width: 100vw;
+    max-height: 600px;
     padding: 2rem 10px 10px;
-}
-.aboutUs-box{
-    margin-top: 3rem;
+    }
+.aboutUs-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.title{
+.title {
     font-size: 0;
 }
 
-.purple{
+.purple {
     font-family: "Josefin Sans ", sans-serif;
     font-weight: bold;
     color: #BD6EFB;
     font-size: 65px;
 }
 
-.white{
+.white {
     font-family: "Josefin Sans ", sans-serif;
     color: white;
     font-size: 65px;
-
 }
 
-.aboutUs-description-1, .aboutUs-description-2{
+.aboutUs-description-1, .aboutUs-description-2 {
     color: white;
-    max-width: 31rem;
-    font-family: "Josefin Sans Medium", serif;
+    max-width: 35rem;
+    font-family: "Josefin Sans ", serif;
     font-size: 30px;
-
+    margin: 0;
 }
 
-.scrollDown{
+.aboutUs-description-1{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.scrollDown, .scrollDown-2 {
     display: flex;
     flex-direction: column;
     border: 0;
     border-radius: 2rem;
     max-width: 28rem;
-    background-image: linear-gradient(to right, #D786F8,#8196FF );
+    background-image: linear-gradient(to right, #D786F8, #8196FF);
+}
+
+.scrollDown {
     margin-top: 50px;
 }
 
-.button-1{
+.button-1 {
     margin: 10px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 28px;
     color: white;
     text-align: center;
 }
-.bigger{
+
+.bigger {
     font-size: 18px;
 }
-a:link{
-    text-decoration: none;
-}
-a:visited{
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
-}
-a:active{
+
+a:link {
     text-decoration: none;
 }
 
-.mobilePhone-img{
-    width:800px;
-    height: 800px;
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.mobilePhone-img {
+    max-width: 100%;
+    height: 900px;
     transform: rotate(20deg);
-    /*overflow: visible;*/
-    margin-top: -90px;
+    margin-top: -120px;
+}
+/* Responsive design for mobile phone*/
+@media screen and (max-width: 480px) {
+    .header{
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        height: 200px;
+    }
+    .purple,.white{
+        font-size: 15px;
+    }
+    .aboutUs-description-1, .aboutUs-description-2{
+        font-size: 10px;
+        width: 8rem;
+    }
+    .button-1{
+        font-size: 8px;
+    }
+    .bigger{
+        font-size: 6px;
+    }
+
+    .scrollDown{
+        margin-top: 20px;
+    }
+
+    .mobilePhone-img{
+        width: 45vw;
+        height: 30vh;
+        margin-top: -50px;
+    }
 
 }
+/* Offer */
+
+.offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.offer-box1{
+    display: grid;
+    justify-content: center;
+}
+#offer-title{
+    font-family: "Josefin Sans Bold", sans-serif;
+    font-size: 35px;
+    margin: 0 0 10px;
+}
+
+#offer-subheading{
+    font-family: "Open Sans ExtraBold", sans-serif;
+    font-size: 35px;
+    color: #BD6EFB;
+    margin: 0 0 10px;
+}
+
+#offer-quote{
+    font-family: "Josefin Sans Bold",sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+#offer-para{
+    font-family: "Josefin Sans Medium",sans-serif;
+    font-size: 35px;
+    width: 50rem;
+    margin: 10px 0;
+}
+#offer-para{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#offer-para-2{
+    font-family: "Josefin Sans Bold",sans-serif;
+    width: 50rem;
+    font-size: 30px;
+    margin: 0;
+}
+#loves{
+    font-weight: bold;
+    color: #BD6EFB;
+}
+.scrollDown-2{
+    max-width: 40rem;
+}
+.button-2{
+    margin: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.bigger-2{
+    font-size: 20px;
+}
+
+.offer-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#noOffer{
+    font-family: "Josefin Sans Bold",sans-serif;
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+#list{
+    font-family: "Josefin Sans SemiBold",sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 10px 0;
+    list-style: none;
+}
+
+li:before{
+    content: "\2718";
+}
+
+
+
 
 
 
