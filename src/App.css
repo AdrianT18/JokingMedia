@@ -1,4 +1,4 @@
-html, body{
+html, body {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -10,7 +10,7 @@ html, body{
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #191818;
     border: 2px solid #191818;
     border-top-right-radius: 200px;
@@ -18,7 +18,9 @@ html, body{
     min-width: 100vw;
     max-height: 600px;
     padding: 2rem 10px 10px;
-    }
+
+}
+
 .aboutUs-box {
     display: flex;
     flex-direction: column;
@@ -50,7 +52,7 @@ html, body{
     margin: 0;
 }
 
-.aboutUs-description-1{
+.aboutUs-description-1 {
     margin-bottom: 30px;
     margin-top: 20px;
 }
@@ -98,98 +100,120 @@ a:active {
 }
 
 .mobilePhone-img {
-    max-width: 100%;
-    height: 900px;
+    max-width: 60vw;
+    height: 55vh;
     transform: rotate(20deg);
-    margin-top: -120px;
+    margin-top: 45px;
+    position: -webkit-sticky;
 }
+
 /* Responsive design for mobile phone*/
-@media screen and (max-width: 480px) {
-    .header{
-        border-top-right-radius: 100px;
-        border-bottom-left-radius: 100px;
-        height: 200px;
+@media only screen and (max-width: 480px) {
+    .header {
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        padding: 0;
+        height: 25vh;
     }
-    .purple,.white{
+
+    .purple, .white {
         font-size: 15px;
     }
-    .aboutUs-description-1, .aboutUs-description-2{
+
+    .aboutUs-description-1, .aboutUs-description-2 {
         font-size: 10px;
         width: 8rem;
+        margin: 10px 0 0;
     }
-    .button-1{
+
+    .button-1 {
         font-size: 8px;
+        margin: 4px;
     }
-    .bigger{
+
+    .bigger {
         font-size: 6px;
     }
 
-    .scrollDown{
-        margin-top: 20px;
+    .scrollDown {
+        margin-top: 5px;
+        width: 8rem;
     }
 
-    .mobilePhone-img{
-        width: 45vw;
-        height: 30vh;
-        margin-top: -50px;
+    .mobilePhone-img {
+        width: 50vw;
+        height: 23vh;
+        margin-top: 25px;
+        position: -webkit-sticky;
     }
-
 }
-/* Offer */
 
-.offer{
+/* Offer */
+.offer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
-.offer-box1{
-    display: grid;
+
+.offer-box1 {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-#offer-title{
+.offer-box2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#offer-title {
     font-family: "Josefin Sans Bold", sans-serif;
     font-size: 35px;
     margin: 0 0 10px;
 }
 
-#offer-subheading{
+#offer-subheading {
     font-family: "Open Sans ExtraBold", sans-serif;
     font-size: 35px;
     color: #BD6EFB;
     margin: 0 0 10px;
 }
 
-#offer-quote{
-    font-family: "Josefin Sans Bold",sans-serif;
+#offer-quote {
+    font-family: "Josefin Sans Bold", sans-serif;
     font-size: 30px;
     margin: 0;
 }
-#offer-para{
-    font-family: "Josefin Sans Medium",sans-serif;
+
+#offer-para {
+    font-family: "Josefin Sans Medium", sans-serif;
     font-size: 35px;
     width: 50rem;
     margin: 10px 0;
 }
-#offer-para{
+
+#offer-para {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-#offer-para-2{
-    font-family: "Josefin Sans Bold",sans-serif;
+#offer-para-2 {
+    font-family: "Josefin Sans Bold", sans-serif;
     width: 50rem;
     font-size: 30px;
     margin: 0;
 }
-#loves{
+
+#loves {
     font-weight: bold;
     color: #BD6EFB;
 }
-.scrollDown-2{
+
+.scrollDown-2 {
     max-width: 40rem;
 }
-.button-2{
+
+.button-2 {
     margin: 10px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -197,39 +221,104 @@ a:active {
     color: white;
     text-align: center;
 }
-.bigger-2{
+
+.bigger-2 {
     font-size: 20px;
 }
 
-.offer-box2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-#noOffer{
-    font-family: "Josefin Sans Bold",sans-serif;
+#noOffer {
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
     margin: 0 0 10px;
 }
 
-#list{
-    font-family: "Josefin Sans SemiBold",sans-serif;
+#list {
+    font-family: "Josefin Sans SemiBold", sans-serif;
     font-weight: bold;
     font-size: 25px;
     margin: 0;
     padding: 0;
 }
 
-li{
+li {
     margin: 10px 0;
     list-style: none;
 }
 
-li:before{
+li:before {
     content: "\2718";
 }
+.offer-btn{
+    margin-left: 25px;
+}
+
+/* Responsive design for mobile phone*/
+@media only screen and (max-width: 480px) {
+    .offer {
+        margin-top: 2rem;
+        justify-content: space-evenly;
+    }
+
+    #offer-title {
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+    #offer-subheading {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+
+    #offer-quote {
+        font-size: 10px;
+        margin-bottom: 4px;
+        width: 10rem;
+    }
+
+    #offer-para {
+        font-size: 10px;
+        width: 10rem;
+        margin-bottom: 4px;
+        margin-top: 4px;
+    }
+
+    .button-2 {
+        font-size: 10px;
+        margin: 4px;
+    }
+
+    .bigger-2 {
+        font-size: 8px;
+    }
+
+    .scrollDown-2 {
+        margin-top: 5px;
+        width: 10rem;
+    }
+
+    .offer-box2{
+        margin-top: 0;
+    }
+    #noOffer {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+
+    #offer-para-2 {
+        font-size: 10px;
+        width: 10rem;
+    }
+
+    #list {
+        font-size: 10px;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+}
+
+
 
 
 

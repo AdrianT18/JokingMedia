@@ -1,6 +1,6 @@
 import React from "react";
 import './/App.css'
-import mobilePhone from './images/mobilePhone.png'
+import mobilePhone from './images/phone.png'
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                             <span className="bigger">Schedule Your FREE Audit Call Now</span></p>
                     </a>
                 </div>
-               <img className="mobilePhone-img" src={mobilePhone} alt="A vector of a mobile phone"/>
+                <img className="mobilePhone-img" src={mobilePhone} alt="A vector of a mobile phone"/>
             </div>
 
             <div className="offer">
@@ -32,10 +32,10 @@ function App() {
                         content &
                         increasing the social presence of your brand to build a community that <span
                             id="loves">loves</span> your service.</p>
-                     <a className="scrollDown-2" href="#calandly">
-                        <p className="button-2">Speak To Our Team Today <br/>
-                            <span className="bigger-2">Schedule Your FREE Audit Call Now</span></p>
-                    </a>
+                        <a className="scrollDown-2" href="#calandly">
+                            <p className="button-2">Speak To Our Team Today <br/>
+                                <span className="bigger-2">Schedule Your FREE Audit Call Now</span></p>
+                        </a>
                 </div>
                 <div className="offer-box2">
                     <h2 id="noOffer">Only one goal so...</h2>
@@ -48,6 +48,7 @@ function App() {
                     </ul>
                 </div>
             </div>
+
         </div>
     );
 }
