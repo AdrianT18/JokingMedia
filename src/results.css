@@ -1,0 +1,166 @@
+/* Top wave */
+.results-top-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.results-top-wave svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 192px;
+}
+
+.results-top-wave .shape-fill {
+    fill: white;
+}
+/* Bottom wave */
+.results-bottom-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.results-bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 192px;
+}
+
+.results-bottom-wave .shape-fill {
+    fill: #FFFFFF;
+}
+/* Main */
+.results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: rgba(243, 243, 243, 1);
+
+}
+
+.results-img {
+    display: flex;
+    justify-content: center;
+    max-width: 60vh;
+    max-height: 60vh;
+}
+.mobile-results-img{
+    visibility: hidden;
+    display: none;
+}
+
+.results-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.results-Title {
+    font-family: "Montserrat ExtraBold", sans-serif;
+    font-size: 35px;
+    margin: 0 0 10px;
+}
+
+.results-wrd {
+    color: #BD6EFB;;
+}
+
+.results-para, .results-para2 {
+    font-family: "Montserrat SemiBold", sans-serif;
+    font-size: 24px;
+    max-width: 60rem;
+    margin: 10px 0;
+}
+
+.results-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.scrollDown-3 {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 2rem;
+    width: 30rem;
+    background-image: linear-gradient(to right, #D786F8, #8196FF);
+    margin-top: 2rem;
+}
+.button-3 {
+    margin: 10px;
+    font-family: "Roboto Black", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
+
+.bigger-3 {
+    font-size: 22px;
+}
+/* Responsive design for mobile phone*/
+@media only screen and (max-width: 480px) {
+    section.results{
+        padding: 150px 150px 120px;
+    }
+    .results {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .results-img {
+        visibility: hidden;
+        display: none;
+    }
+    .mobile-results-img{
+        visibility: visible;
+        display: flex;
+        height: 40vh;
+        width: 35vh;
+    }
+
+    .results-Title{
+        font-size: 18px;
+    }
+    .results-para,.results-para2{
+        font-size: 14px;
+    }
+    .results-para{
+    }
+    .results-para2{
+    }
+    .results-btn{
+    }
+    .button-3 {
+        font-size: 16px;
+        margin: 4px;
+    }
+
+    .bigger-3 {
+        font-size: 14px;
+    }
+    .scrollDown-3 {
+        margin-top: 5px;
+        width: 18rem;
+    }
+    .results-top-wave svg {
+        height: 130px;
+    }
+    .results-bottom-wave  svg {
+        height: 150px;
+    }
+}

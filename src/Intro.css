@@ -1,0 +1,168 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+/* Header section Main*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #191818;
+    border: 2px solid #191818;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    min-width: 100vw;
+    max-height: 600px;
+    padding: 2rem 10px 10px;
+
+}
+
+.aboutUs-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 0;
+}
+
+.purple {
+    font-family: "Roboto Black", sans-serif;
+    font-weight: bold;
+    color: #BD6EFB;
+    font-size: 65px;
+}
+
+.white {
+    font-family: "Roboto Black", sans-serif;
+    color: white;
+    font-size: 65px;
+}
+
+.aboutUs-description-1, .aboutUs-description-2 {
+    color: white;
+    max-width: 35rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.aboutUs-description-1 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.scrollDown, .scrollDown-2 {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 2rem;
+    max-width: 30rem;
+    background-image: linear-gradient(to right, #D786F8, #8196FF);
+}
+
+.scrollDown {
+    margin-top: 50px;
+}
+
+.button-1 {
+    margin: 10px;
+    font-family: "Roboto Black", sans-serif;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.bigger {
+    font-size: 18px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.mobilePhone-img {
+    max-width: 60vw;
+    height: 55vh;
+    transform: rotate(20deg);
+    margin-top: 45px;
+    position: -webkit-sticky;
+}
+
+/* Responsive design for mobile phone*/
+@media only screen and (max-width: 480px) {
+    .header {
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 40px;
+        padding: 0 0 0 15px;
+        height: 30vh;
+    }
+
+    .purple, .white {
+        font-size: 20px;
+    }
+
+    .aboutUs-description-1, .aboutUs-description-2 {
+        font-size: 12px;
+        width: 10rem;
+        margin: 10px 0 0;
+    }
+
+    .button-1 {
+        font-size: 10px;
+        margin: 5px;
+    }
+
+    .bigger {
+        font-size: 8px;
+    }
+
+    .scrollDown {
+        margin-top: 15px;
+        width: 10rem;
+    }
+
+    .mobilePhone-img {
+        width: 55vw;
+        height: 28vh;
+        margin-top: 30px;
+        position: -webkit-sticky;
+    }
+}
+
+
+
+
+
+
+
+
+
+
