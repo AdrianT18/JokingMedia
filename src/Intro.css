@@ -22,9 +22,6 @@ html, body {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #191818;
-    border: 2px solid #191818;
-    border-top-right-radius: 200px;
-    border-bottom-left-radius: 200px;
     min-width: 100vw;
     max-height: 600px;
     padding: 2rem 10px 10px;
@@ -112,15 +109,12 @@ a:active {
     max-width: 60vw;
     height: 55vh;
     transform: rotate(20deg);
-    margin-top: 45px;
     position: -webkit-sticky;
 }
 
 /* Responsive design for mobile phone*/
 @media only screen and (max-width: 480px) {
     .header {
-        border-top-right-radius: 80px;
-        border-bottom-left-radius: 40px;
         padding: 0 0 0 15px;
         height: 30vh;
     }
@@ -150,12 +144,11 @@ a:active {
     }
 
     .mobilePhone-img {
-        width: 48vw;
-        height: 28vh;
-        margin-top: 45px;
-        margin-left: -15px;
+        width: 45vw;
+        height: 20vh;
         position: -webkit-sticky;
     }
+
 }
 
 

@@ -1,10 +1,30 @@
+/* Top wave */
+.offer-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.offer-wave svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 192px;
+}
+
+.offer-wave .shape-fill {
+    fill: #191818;
+}
 /* Offer */
 .offer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 0;
+    padding-top: 10rem;
     /*margin-top: 10rem;*/
 }
 
@@ -109,7 +129,7 @@ li span{
         justify-content: center;
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 50px;
+        padding-top: 6rem;
     }
     .offer-box1, .offer-box2{
         justify-content: flex-start;
@@ -168,6 +188,9 @@ li span{
     }
     .offer-btn{
         justify-content: space-evenly;
+    }
+    .offer-wave svg {
+        height: 100px;
     }
 
 
