@@ -129,25 +129,21 @@
     .mobile-results-img{
         visibility: visible;
         display: flex;
-        height: 40vh;
-        width: 35vh;
+        height: 50vh;
+        width: 40vh;
     }
 
     .results-Title{
-        font-size: 18px;
+        text-align: center;
+        font-size: 24px;
     }
     .results-para,.results-para2{
-        font-size: 14px;
+        font-size: 18px;
     }
-    .results-para{
-    }
-    .results-para2{
-    }
-    .results-btn{
-    }
+
     .button-3 {
         font-size: 16px;
-        margin: 4px;
+        margin: 10px;
     }
 
     .bigger-3 {

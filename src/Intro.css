@@ -8,7 +8,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
-section{
+.header, .offer, .results{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -150,9 +150,10 @@ a:active {
     }
 
     .mobilePhone-img {
-        width: 55vw;
+        width: 48vw;
         height: 28vh;
-        margin-top: 30px;
+        margin-top: 45px;
+        margin-left: -15px;
         position: -webkit-sticky;
     }
 }
