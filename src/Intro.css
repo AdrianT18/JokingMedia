@@ -3,18 +3,24 @@ html, body {
     height: 100vh;
     overflow-x: hidden;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.header, .offer, .results{
+
+.header, .offer, .results, .strategy {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 100px;
 }
+
+.header, .offer, .results {
+    align-items: center;
+}
+
 
 /* Header section Main*/
 .header {
@@ -106,8 +112,8 @@ a:active {
 }
 
 .mobilePhone-img {
-    max-width: 60vw;
-    height: 55vh;
+    max-width: 48vw;
+    max-height: 48vh;
     transform: rotate(20deg);
     position: -webkit-sticky;
 }
@@ -116,35 +122,41 @@ a:active {
 @media only screen and (max-width: 480px) {
     .header {
         padding: 0 0 0 15px;
-        height: 30vh;
+        height: 36vh;
     }
-
+    .title{
+        padding-right: 1rem;
+    }
     .purple, .white {
-        font-size: 20px;
+        font-size: 22px;
     }
-
+    .aboutUs-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .aboutUs-description-1, .aboutUs-description-2 {
-        font-size: 12px;
+        font-size: 14px;
         width: 10rem;
         margin: 10px 0 0;
     }
 
     .button-1 {
-        font-size: 10px;
-        margin: 5px;
+        font-size: 12px;
+        margin: 10px;
     }
 
     .bigger {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .scrollDown {
         margin-top: 15px;
-        width: 10rem;
+        width: 12rem;
     }
 
     .mobilePhone-img {
-        width: 45vw;
+        width: 40vw;
         height: 20vh;
         position: -webkit-sticky;
     }

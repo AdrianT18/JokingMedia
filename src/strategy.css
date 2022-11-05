@@ -1,6 +1,43 @@
-.kickOff-img {
-    height: 200px;
-    width: 200px;
+.custom-shape-divider-top-1667681375 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1667681375 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1667681375 .shape-fill {
+    fill: #F3F3F3;
+}
+
+/* Bottom wave */
+.strat-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.strat-wave svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 192px;
+}
+
+.strat-wave .shape-fill {
+    fill: lightskyblue;
 }
 
 /* Header */
@@ -14,13 +51,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .strat-title {
     font-family: "Montserrat ExtraBold", sans-serif;
     font-size: 35px;
-    /*margin: 0 0 10px;*/
+    margin: 0 0 10px;
 }
 
 .scale {
@@ -34,7 +71,7 @@
 }
 
 .how {
-    color: #BD6EFB;;
+    color: #BD6EFB;
 }
 
 /* Strategy */
@@ -43,95 +80,102 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-right: 8rem;
+    padding-left: 8rem;
     margin-bottom: 30px;
+    /*gap: 6rem;*/
 }
 
-.call-img, .strat-img {
-    height: 10vh;
-    width: 9vh;
-    margin-bottom: 1rem;
-}
 
-.kick-off {
-    height: 10vh;
-    width: 10vh;
+.call-img,.strat-img,.kick-off {
+    max-height: 10vh;
+    max-width: 10vw;
     margin-bottom: 1rem;
 }
 
 .first, .second, .third {
     width: 300px;
     height: 260px;
-    border: 3px solid black;
+    border: 3px solid white;
+    box-shadow: 0 0 1rem #8900F6;
     padding: 4rem 5rem 4rem;
     border-radius: 25px;
     display: block;
     position: relative;
     text-align: center;
-    font-family: "Montserrat ExtraBold", sans-serif;
+    font-family: "Montserrat Bold", sans-serif;
 }
+
 
 .circle {
     position: absolute;
     height: 70px;
     width: 70px;
     border-radius: 40px;
-    border: 3px solid black;
+    border: 3px solid white;
     left: 50%;
     margin-left: -35px;
     top: -34px;
     background: white;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 9px;
     font-size: 34px;
     font-family: "Roboto Black", sans-serif;
+    box-shadow: 0 0 1rem #8900F6;
 }
 
 /*Step 01*/
-.step-1, .step-2 {
+.step-1, .step-2, .step-3 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 100px;
+    justify-content: space-around;
+}
+
+.step-1 {
+    margin-top: 3rem;
 }
 
 .strat1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    padding-left: 20px;
-    padding-bottom: 0;
+    /*padding-bottom: 1rem;*/
 }
 
-.heading1, .heading2 {
+.heading1, .heading2, .heading3 {
     font-family: "Montserrat SemiBold", sans-serif;
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-.subheading1, .subheading2 {
+.word {
+    font-family: "Montserrat ExtraBold", sans-serif;
+    color: #BD6EFB;
+}
+
+
+.subheading1, .subheading2, .subheading3 {
     font-family: "Montserrat Bold", sans-serif;
-    font-size: 26px;
-    margin-bottom: 5px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.step1-para, .step2-para {
+.step1-para, .step2-para, .step3-para {
     font-family: "Montserrat SemiBold", sans-serif;
-    font-size: 20px;
-    max-width: 20rem;
+    font-size: 22px;
+    max-width: 30rem;
 }
 
-.strat1-img, .strat3-img {
+.strat1-img, .strat3-img, .strat3-img {
     display: flex;
     flex-direction: column;
-    padding-right: 100px;
+    align-items: center;
 }
 
 .calling-img {
     align-items: center;
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 35vw;
+    max-height: 35vh;
 }
 
 .scrollDown-4 {
@@ -139,7 +183,7 @@
     flex-direction: column;
     border: 0;
     border-radius: 2rem;
-    width: 20rem;
+    width: 25rem;
     background-image: linear-gradient(to right, #D786F8, #8196FF);
     margin-top: 2rem;
 }
@@ -158,18 +202,21 @@
 }
 
 /*Step 02*/
-.step-2 {
-    padding-top: 50px;
+
+.strat2 {
+    display: flex;
+    justify-content: center;
 }
 
-.strat2-img {
+.strat2-img, .strat3-img {
     display: flex;
     justify-content: center;
 }
 
 .strategy-img2 {
-    max-width: 580px;
-    max-height: 580px;
+    padding-top: 4rem;
+    max-width: 40vw;
+    max-height: 50vh;
 }
 
 .step2-para {
@@ -179,11 +226,150 @@
 }
 
 .strat2 {
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    padding-left: 20px;
-    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/*Step 03*/
+
+.kickOff-img {
+    max-height: 45vh;
+    max-width: 45vh;
+}
+
+/*Mobile Phone*/
+@media only screen and (max-width: 480px) {
+
+    /*Title + step imgs*/
+    .strategy {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2rem;
+    }
+
+    .strat-title {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .strat-sub {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .strat-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    .call-img{
+        max-height: 7vh;
+        max-width: 7vh;
+        margin-bottom: 1rem;
+    }
+    .strat-img{
+        max-height: 10vh;
+        max-width: 10vh;
+        margin-bottom: 1rem;
+    }
+    .kick-off {
+        max-height: 9vh;
+        max-width: 9vh;
+        margin-bottom: 1rem;
+    }
+
+    .first, .second, .third {
+        width: 60vw;
+        height: 24vh;
+        padding: 3rem 4rem 3rem;
+    }
+
+    .circle {
+        height: 50px;
+        width: 50px;
+        margin-left: -24px;
+        top: -24px;
+        padding-top: 4px;
+        font-size: 28px;
+    }
+
+    .sub {
+        font-size: 20px;
+    }
+
+    /*Step 1*/
+    .step-1, .step-2, .step-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-1 {
+        margin-top: 1rem;
+    }
+
+    .strat1 {
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .heading1, .heading2, .heading3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .subheading1, .subheading2, .subheading3 {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .step1-para, .step2-para, .step3-para {
+        font-size: 16px;
+        max-width: 20rem;
+        padding-bottom: 2rem;
+    }
+
+    .calling-img {
+        max-width: 100vw;
+        max-height: 40vh;
+    }
+
+    .scrollDown-4 {
+        width: 20rem;
+    }
+
+    .button-4 {
+        font-size: 16px;
+    }
+
+    .bigger-4 {
+        font-size: 14px;
+    }
+
+    /*Step 02*/
+    .strat2 {
+        padding-top: 1.5rem;
+        order: -2;
+    }
+
+    .strategy-img2 {
+        padding-top: 0;
+        max-width: 90vw;
+        max-height: 30vh;
+    }
+
+    /*Step 03*/
+    .strat3 {
+        padding-top: 1rem;
+    }
+
+    .kickOff-img {
+        max-height: 40vh;
+        max-width: 40vh;
+    }
+
 }

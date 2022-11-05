@@ -54,7 +54,7 @@
 .results-img {
     display: flex;
     justify-content: center;
-    max-width: 70vh;
+    max-width: 100vh;
     max-height: 70vh;
 }
 .mobile-results-img{
@@ -114,13 +114,15 @@
 /* Responsive design for mobile phone*/
 @media only screen and (max-width: 480px) {
     section.results{
-        padding: 150px 150px 120px;
-    }
-    .results {
+        /*padding: 150px 150px 120px;*/
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 8rem;
         margin-top: 0;
+
     }
     .results-img {
         visibility: hidden;
@@ -129,16 +131,26 @@
     .mobile-results-img{
         visibility: visible;
         display: flex;
-        height: 70vh;
-        width: 55vh;
+        max-height: 45vh;
+        max-width: 45vh;
     }
 
     .results-Title{
         text-align: center;
-        font-size: 24px;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .results-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .results-para,.results-para2{
+        max-width: 20rem;
         font-size: 18px;
+    }
+    .results-para{
+        margin-top: 1rem;
     }
 
     .button-3 {
@@ -150,7 +162,7 @@
         font-size: 14px;
     }
     .scrollDown-3 {
-        margin-top: 5px;
+        margin-top: 10px;
         width: 18rem;
     }
     .results-top-wave svg {
