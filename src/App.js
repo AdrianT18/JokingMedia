@@ -31,7 +31,7 @@ function App() {
                             <span className="bigger">Schedule Your FREE Audit Call Now</span></p>
                     </a>
                 </div>
-                <div className="phone"><img src={mobilePhone} className="mobilePhone-img"
+                <div className="phone"><img loading="lazy" src={mobilePhone} className="mobilePhone-img"
                                             alt="A vector of a mobile phone"/></div>
             </section>
 
@@ -74,7 +74,7 @@ function App() {
             </section>
 
             <section className="results">
-                <img className="results-img" src={resultImage}
+                <img className="results-img" loading="lazy" src={resultImage}
                      alt="Our results show cased"/>
                 <div className="results-main">
                     <h1 className="results-Title"> An Agency Proud To Show-Case <span
@@ -125,19 +125,19 @@ function App() {
                 <div className="strat-images">
                     <div className="first">
                         <div className="circle">1</div>
-                        <img className="call-img" src={call} alt="mobile phone icon"/>
+                        <img className="call-img" loading="lazy" src={call} alt="mobile phone icon"/>
                         <h2 className="sub">Initial Call</h2>
                     </div>
 
                     <div className="second">
                         <div className="circle">2</div>
-                        <img className="strat-img" src={stratergy} alt="thinking lightbulb"/>
+                        <img className="strat-img" loading="lazy" src={stratergy} alt="thinking lightbulb"/>
                         <h2 className="sub">Strategy</h2>
                     </div>
 
                     <div className="third">
                         <div className="circle">3</div>
-                        <img className="kick-off" src={sample} alt="paint sample"/>
+                        <img className="kick-off" loading="lazy" src={sample} alt="paint sample"/>
                         <h2 className="sub"> Kick Off</h2>
                     </div>
                 </div>
@@ -150,7 +150,7 @@ function App() {
                             call just to conduct a growth analysis and understand how we will execute the strategy.</p>
                     </div>
                     <div className="strat1-img">
-                        <img className="calling-img" src={calling} alt="people connected around a mobile phone"/>
+                        <img className="calling-img" loading="lazy" src={calling} alt="people connected around a mobile phone"/>
                         <a className="scrollDown-4" href="#calandly">
                         <p className="button-4">Speak To Our Team Today <br/>
                             <span className="bigger-4">Schedule Your FREE Audit Call Now</span></p>
@@ -159,7 +159,7 @@ function App() {
                 </div>
                 <div className="step-2">
                     <div className="strat2-img">
-                        <img className="strategy-img2" src={strat} alt="vector of talking through phone"/>
+                        <img className="strategy-img2" loading="lazy" src={strat} alt="vector of talking through phone"/>
                     </div>
                     <div className="strat2">
                         <h3 className="heading2"><span className="word">Step</span> 02</h3>
@@ -181,7 +181,7 @@ function App() {
                             in front of our target audience and convert them into followers.</p>
                     </div>
                     <div className="strat3-img">
-                        <img className="kickOff-img" src={sampleMeeting} alt="vector of a meeting"/>
+                        <img className="kickOff-img" loading="lazy" src={sampleMeeting} alt="vector of a meeting"/>
                     </div>
                 </div>
                 <div className="strat-wave">
