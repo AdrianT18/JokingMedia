@@ -5,13 +5,13 @@ import './results.css'
 import './strategy.css'
 import mobilePhone from './images/phone.png'
 import resultImage from './images/results-image.png'
-import call from './images/call.png'
+import call from './images/call-1.png'
 import calling from './images/calling.png'
-import sample from './images/sample.png'
+import sample from './images/kick-off-1.png'
 import sampleMeeting from './images/sample meeting.png'
 import strat from './images/strat.png'
-import stratergy from './images/stratergy.png'
-
+import stratergy from './images/stratergy-1.png'
+import arrow from './images/arrows.png'
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
                             <span className="bigger">Schedule Your FREE Audit Call Now</span></p>
                     </a>
                 </div>
-                <div className="phone"><img loading="lazy" src={mobilePhone} className="mobilePhone-img"
+                <div className="phone"><img src={mobilePhone} className="mobilePhone-img"
                                             alt="A vector of a mobile phone"/></div>
             </section>
 
@@ -63,14 +63,14 @@ function App() {
                         <li><span>Paid Ads</span></li>
                     </ul>
                 </div>
-                    <div className="offer-wave">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                             preserveAspectRatio="none">
-                            <path
-                                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                                className="shape-fill"></path>
-                        </svg>
-                    </div>
+                <div className="offer-wave">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                         preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            className="shape-fill"></path>
+                    </svg>
+                </div>
             </section>
 
             <section className="results">
@@ -122,25 +122,27 @@ function App() {
                     <h2 className="strat-sub">Here's <span className="how"> How </span> It Works</h2>
                 </header>
 
-                <div className="strat-images">
-                    <div className="first">
-                        <div className="circle">1</div>
-                        <img className="call-img" loading="lazy" src={call} alt="mobile phone icon"/>
-                        <h2 className="sub">Initial Call</h2>
-                    </div>
-
-                    <div className="second">
-                        <div className="circle">2</div>
-                        <img className="strat-img" loading="lazy" src={stratergy} alt="thinking lightbulb"/>
-                        <h2 className="sub">Strategy</h2>
-                    </div>
-
-                    <div className="third">
-                        <div className="circle">3</div>
-                        <img className="kick-off" loading="lazy" src={sample} alt="paint sample"/>
-                        <h2 className="sub"> Kick Off</h2>
-                    </div>
+                {/*<div className="arrow-behind">*/}
+                    {/*<div className="arrow"><img className="arrows" src={arrow} alt="arrows"/></div>*/}
+                    <div className="strat-images">
+                        <div className="first">
+                            <div className="circle">1</div>
+                            <img className="call-img" loading="lazy" src={call} alt="mobile phone icon"/>
+                            <h2 className="sub">Initial Call</h2>
+                        </div>
+                        <div className="second">
+                            <div className="circle">2</div>
+                            <img className="strat-img" loading="lazy" src={stratergy} alt="thinking lightbulb"/>
+                            <h2 className="sub">Strategy</h2>
+                        </div>
+                        <div className="third">
+                            <div className="circle">3</div>
+                            <img className="kick-off" loading="lazy" src={sample} alt="paint sample"/>
+                            <h2 className="sub"> Kick Off</h2>
+                        </div>
+                    {/*</div>*/}
                 </div>
+
                 <div className="step-1">
                     <div className="strat1">
                         <h3 className="heading1"><span className="word">Step</span> 01</h3>
@@ -150,16 +152,18 @@ function App() {
                             call just to conduct a growth analysis and understand how we will execute the strategy.</p>
                     </div>
                     <div className="strat1-img">
-                        <img className="calling-img" loading="lazy" src={calling} alt="people connected around a mobile phone"/>
+                        <img className="calling-img" loading="lazy" src={calling}
+                             alt="people connected around a mobile phone"/>
                         <a className="scrollDown-4" href="#calandly">
-                        <p className="button-4">Speak To Our Team Today <br/>
-                            <span className="bigger-4">Schedule Your FREE Audit Call Now</span></p>
-                    </a>
+                            <p className="button-4">Speak To Our Team Today <br/>
+                                <span className="bigger-4">Schedule Your FREE Audit Call Now</span></p>
+                        </a>
                     </div>
                 </div>
                 <div className="step-2">
                     <div className="strat2-img">
-                        <img className="strategy-img2" loading="lazy" src={strat} alt="vector of talking through phone"/>
+                        <img className="strategy-img2" loading="lazy" src={strat}
+                             alt="vector of talking through phone"/>
                     </div>
                     <div className="strat2">
                         <h3 className="heading2"><span className="word">Step</span> 02</h3>

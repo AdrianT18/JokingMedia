@@ -26,18 +26,18 @@ html, body {
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #191818;
     min-width: 100vw;
     max-height: 600px;
-    padding: 2rem 10px 10px;
+    /*padding: 2rem 10px 10px;*/
 
 }
 
 .aboutUs-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: flex-start;*/
 }
 
 .title {
@@ -59,7 +59,7 @@ html, body {
 
 .aboutUs-description-1, .aboutUs-description-2 {
     color: white;
-    max-width: 35rem;
+    max-width: 30rem;
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     margin: 0;
@@ -132,12 +132,10 @@ a:active {
     }
     .aboutUs-box{
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .aboutUs-description-1, .aboutUs-description-2 {
         font-size: 14px;
-        width: 10rem;
+        max-width: 12rem;
         margin: 10px 0 0;
     }
 

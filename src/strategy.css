@@ -42,6 +42,7 @@
 
 /* Header */
 .strategy {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 100px;
@@ -51,7 +52,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .strat-title {
@@ -75,19 +76,30 @@
 }
 
 /* Strategy */
+/*.arrow {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*.arrows {*/
+/*    width: 42vw;*/
+/*    position: relative;*/
+/*    top: 12vh;*/
+/*}*/
+
 
 .strat-images {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-right: 8rem;
     padding-left: 8rem;
     margin-bottom: 30px;
-    /*gap: 6rem;*/
+    gap: 8rem;
 }
 
 
-.call-img,.strat-img,.kick-off {
+.call-img, .strat-img, .kick-off {
     max-height: 10vh;
     max-width: 10vw;
     margin-bottom: 1rem;
@@ -98,6 +110,7 @@
     height: 260px;
     border: 3px solid white;
     box-shadow: 0 0 1rem #8900F6;
+    background: white;
     padding: 4rem 5rem 4rem;
     border-radius: 25px;
     display: block;
@@ -121,7 +134,7 @@
     padding-top: 9px;
     font-size: 34px;
     font-family: "Roboto Black", sans-serif;
-    box-shadow: 0 0 1rem #8900F6;
+    box-shadow: 0 0 1rem 2px #8900F6;
 }
 
 /*Step 01*/
@@ -261,25 +274,20 @@
         font-size: 22px;
     }
 
+    .arrow{
+        display: none;
+        visibility: hidden;
+    }
     .strat-images {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 4rem;
     }
-    .call-img{
-        max-height: 7vh;
-        max-width: 7vh;
-        margin-bottom: 1rem;
-    }
-    .strat-img{
-        max-height: 10vh;
+
+    .call-img, .strat-img, .kick-off {
+        max-height: 8vh;
         max-width: 10vh;
-        margin-bottom: 1rem;
-    }
-    .kick-off {
-        max-height: 9vh;
-        max-width: 9vh;
         margin-bottom: 1rem;
     }
 

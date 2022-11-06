@@ -81,7 +81,7 @@
 .results-para, .results-para2 {
     font-family: "Montserrat SemiBold", sans-serif;
     font-size: 24px;
-    max-width: 60rem;
+    max-width: 48rem;
     margin: 10px 0;
 }
 
@@ -137,7 +137,7 @@
 
     .results-Title{
         text-align: center;
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 30px;
     }
     .results-main{
