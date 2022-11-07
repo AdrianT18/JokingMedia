@@ -1,8 +1,9 @@
 import React from "react";
-import './/Intro.css'
-import './offer.css'
-import './results.css'
-import './strategy.css'
+import './styles/Intro.css'
+import './styles/offer.css'
+import './styles/results.css'
+import './styles/strategy.css'
+import './styles/resultsSection2.css'
 import mobilePhone from './images/phone.png'
 import resultImage from './images/results-image.png'
 import call from './images/call-1.png'
@@ -74,7 +75,7 @@ function App() {
             </section>
 
             <section className="results">
-                <img className="results-img" loading="lazy" src={resultImage}
+                <img className="results-img" src={resultImage}
                      alt="Our results show cased"/>
                 <div className="results-main">
                     <h1 className="results-Title"> An Agency Proud To Show-Case <span
@@ -123,23 +124,23 @@ function App() {
                 </header>
 
                 {/*<div className="arrow-behind">*/}
-                    {/*<div className="arrow"><img className="arrows" src={arrow} alt="arrows"/></div>*/}
-                    <div className="strat-images">
-                        <div className="first">
-                            <div className="circle">1</div>
-                            <img className="call-img" loading="lazy" src={call} alt="mobile phone icon"/>
-                            <h2 className="sub">Initial Call</h2>
-                        </div>
-                        <div className="second">
-                            <div className="circle">2</div>
-                            <img className="strat-img" loading="lazy" src={stratergy} alt="thinking lightbulb"/>
-                            <h2 className="sub">Strategy</h2>
-                        </div>
-                        <div className="third">
-                            <div className="circle">3</div>
-                            <img className="kick-off" loading="lazy" src={sample} alt="paint sample"/>
-                            <h2 className="sub"> Kick Off</h2>
-                        </div>
+                {/*<div className="arrow"><img className="arrows" src={arrow} alt="arrows"/></div>*/}
+                <div className="strat-images">
+                    <div className="first">
+                        <div className="circle">1</div>
+                        <img className="call-img" src={call} alt="mobile phone icon"/>
+                        <h2 className="sub">Initial Call</h2>
+                    </div>
+                    <div className="second">
+                        <div className="circle">2</div>
+                        <img className="strat-img" src={stratergy} alt="thinking lightbulb"/>
+                        <h2 className="sub">Strategy</h2>
+                    </div>
+                    <div className="third">
+                        <div className="circle">3</div>
+                        <img className="kick-off" src={sample} alt="paint sample"/>
+                        <h2 className="sub"> Kick Off</h2>
+                    </div>
                     {/*</div>*/}
                 </div>
 
@@ -152,7 +153,7 @@ function App() {
                             call just to conduct a growth analysis and understand how we will execute the strategy.</p>
                     </div>
                     <div className="strat1-img">
-                        <img className="calling-img" loading="lazy" src={calling}
+                        <img className="calling-img" src={calling}
                              alt="people connected around a mobile phone"/>
                         <a className="scrollDown-4" href="#calandly">
                             <p className="button-4">Speak To Our Team Today <br/>
@@ -162,7 +163,7 @@ function App() {
                 </div>
                 <div className="step-2">
                     <div className="strat2-img">
-                        <img className="strategy-img2" loading="lazy" src={strat}
+                        <img className="strategy-img2" src={strat}
                              alt="vector of talking through phone"/>
                     </div>
                     <div className="strat2">
@@ -185,19 +186,30 @@ function App() {
                             in front of our target audience and convert them into followers.</p>
                     </div>
                     <div className="strat3-img">
-                        <img className="kickOff-img" loading="lazy" src={sampleMeeting} alt="vector of a meeting"/>
+                        <img className="kickOff-img" src={sampleMeeting} alt="vector of a meeting"/>
                     </div>
-                </div>
-                <div className="strat-wave">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                         preserveAspectRatio="none">
-                        <path
-                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                            className="shape-fill"></path>
-                    </svg>
                 </div>
             </section>
 
+            <section className="results-2">
+                <div className="results-container">
+                    <h1 className="res-title">Our <span className="result">Results</span><span
+                        className="emoji"> 🚀</span></h1>
+                    <h2 className="res-quote">We make sure that our content we publish for clients produce <span
+                        className="real"> real</span> results.</h2>
+                    <div className="result-grid">
+                        <div className="result1">250M <br/> <span className="source"> Total Views </span></div>
+                        <div className="result2">2M <br/> <span className="source">Total Followers </span></div>
+                        <div className="result3">$0 <br/> <span className="source">In Ads Spent </span></div>
+                    </div>
+                    <div className="button">
+                        <a className="scrollDown-5" href="#calandly">
+                            <p className="button-5">Speak To Our Team Today <br/>
+                                <span className="bigger-5">Schedule Your FREE Audit Call Now</span></p>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }

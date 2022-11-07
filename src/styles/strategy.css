@@ -1,25 +1,5 @@
-.custom-shape-divider-top-1667681375 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1667681375 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 500px;
-}
-
-.custom-shape-divider-top-1667681375 .shape-fill {
-    fill: #F3F3F3;
-}
-
 /* Bottom wave */
-.strat-wave {
+.custom-shape-divider-bottom-1667850749 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -29,15 +9,15 @@
     transform: rotate(180deg);
 }
 
-.strat-wave svg {
+.custom-shape-divider-bottom-1667850749 svg {
     position: relative;
     display: block;
-    width: calc(123% + 1.3px);
-    height: 192px;
+    width: calc(116% + 1.3px);
+    height: 195px;
 }
 
-.strat-wave .shape-fill {
-    fill: lightskyblue;
+.custom-shape-divider-bottom-1667850749 .shape-fill {
+    fill: black;
 }
 
 /* Header */
@@ -57,7 +37,7 @@
 
 .strat-title {
     font-family: "Montserrat ExtraBold", sans-serif;
-    font-size: 35px;
+    font-size: 2.188rem;
     margin: 0 0 10px;
 }
 
@@ -67,7 +47,7 @@
 
 .strat-sub {
     font-family: "Montserrat ExtraBold", sans-serif;
-    font-size: 34px;
+    font-size: 2.188rem;
     margin: 0 0 10px;
 }
 
@@ -132,7 +112,7 @@
     background: white;
     text-align: center;
     padding-top: 9px;
-    font-size: 34px;
+    font-size: 2.188rem;
     font-family: "Roboto Black", sans-serif;
     box-shadow: 0 0 1rem 2px #8900F6;
 }
@@ -157,7 +137,7 @@
 
 .heading1, .heading2, .heading3 {
     font-family: "Montserrat SemiBold", sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-bottom: 10px;
 }
 
@@ -169,13 +149,13 @@
 
 .subheading1, .subheading2, .subheading3 {
     font-family: "Montserrat Bold", sans-serif;
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-bottom: 10px;
 }
 
 .step1-para, .step2-para, .step3-para {
     font-family: "Montserrat SemiBold", sans-serif;
-    font-size: 22px;
+    font-size: 1.75rem;
     max-width: 30rem;
 }
 
@@ -205,13 +185,13 @@
     margin: 10px;
     font-family: "Roboto Black", sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.375rem;
     color: white;
     text-align: center;
 }
 
 .bigger-4 {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 /*Step 02*/
@@ -234,7 +214,7 @@
 
 .step2-para {
     font-family: "Montserrat SemiBold", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     max-width: 30rem;
 }
 
@@ -266,12 +246,12 @@
 
     .strat-title {
         text-align: center;
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .strat-sub {
         text-align: center;
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .arrow{
@@ -307,7 +287,7 @@
     }
 
     .sub {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     /*Step 1*/
@@ -326,17 +306,17 @@
     }
 
     .heading1, .heading2, .heading3 {
-        font-size: 16px;
+        font-size: 1rem;
         margin-bottom: 6px;
     }
 
     .subheading1, .subheading2, .subheading3 {
-        font-size: 22px;
+        font-size:1.375rem;
         margin-bottom: 6px;
     }
 
     .step1-para, .step2-para, .step3-para {
-        font-size: 16px;
+        font-size:1rem;
         max-width: 20rem;
         padding-bottom: 2rem;
     }
@@ -351,11 +331,11 @@
     }
 
     .button-4 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .bigger-4 {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     /*Step 02*/

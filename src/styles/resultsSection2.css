@@ -1,0 +1,152 @@
+.results-2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.results-container{
+    flex-direction: column;
+    border: 3px solid white;
+    padding: 3rem 10rem;
+    border-radius: 8rem 0 8rem 0;
+    box-shadow: 0 0 2rem #8900F6;
+    background: white;
+    display: block;
+    position: relative;
+}
+
+.res-title{
+    text-align: center;
+    font-family: "Montserrat ExtraBold", sans-serif;
+    font-size: 1.875rem;
+    margin: 0 0 10px;
+}
+.result{
+    color: #BD6EFB;;
+}
+.emoji{
+    font-size: 1.5rem;
+}
+.res-quote{
+    text-align: center;
+    font-family: "Montserrat semiBold", sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+}
+.real{
+    color: #BD6EFB;;
+}
+
+.result-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.result1,.result2,.result3{
+    /*border-radius: 10px;*/
+    /*border: 2px solid black;*/
+    padding: 20px;
+    font-size: 1.625rem;
+    font-family: "Roboto Black", sans-serif;
+}
+
+.source{
+    font-family: "Roboto Thin", sans-serif;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+.scrollDown-5 {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 2rem;
+    width: 25rem;
+    background-image: linear-gradient(to right, #D786F8, #8196FF);
+    margin-top: 2rem;
+}
+
+.button-5 {
+    margin: 10px;
+    font-family: "Roboto Black", sans-serif;
+    font-weight: bold;
+    font-size: 1.375rem;
+    color: white;
+    text-align: center;
+}
+
+.bigger-5 {
+    font-size: 1.125rem;
+}
+
+/*Mobile Phone*/
+@media only screen and (max-width: 480px) {
+    .results-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2rem;
+    }
+
+    .results-container{
+        padding: 2rem 0 ;
+        border-radius: 4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .res-title{
+        text-align: center;
+        font-family: "Montserrat ExtraBold", sans-serif;
+        font-size: 1.2rem;
+        margin: 0 0 10px;
+    }
+    .result{
+        color: #BD6EFB;;
+    }
+    .emoji{
+        font-size: 1.1rem;
+    }
+    .res-quote{
+        text-align: center;
+        font-family: "Montserrat semiBold", sans-serif;
+        font-size: 1rem;
+        max-width: 20rem;
+        margin: 0 0 1rem;
+    }
+    .real{
+        color: #BD6EFB;;
+    }
+
+    .result-grid{
+        flex-direction: column;
+    }
+
+    .result1,.result2,.result3{
+        padding: 20px;
+        font-size: 1.2rem;
+        font-family: "Roboto Black", sans-serif;
+    }
+
+    .scrollDown-5 {
+        margin-top: 0.5rem;
+        width: 20rem;
+    }
+
+    .button-5 {
+        font-size: 0.9rem;
+    }
+
+    .bigger-5 {
+        font-size: 0.8rem;
+    }
+
+}
