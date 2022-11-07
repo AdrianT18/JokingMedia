@@ -239,9 +239,7 @@
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 2rem;
+        padding: 2rem 10px 3rem;
     }
 
     .strat-title {
@@ -254,10 +252,11 @@
         font-size: 1.375rem;
     }
 
-    .arrow{
+    .arrow {
         display: none;
         visibility: hidden;
     }
+
     .strat-images {
         display: flex;
         flex-direction: column;
@@ -265,9 +264,10 @@
         gap: 4rem;
     }
 
-    .call-img, .strat-img, .kick-off {
+
+    .call-img,.strat-img, .kick-off {
         max-height: 8vh;
-        max-width: 10vh;
+        max-width: 14vw;
         margin-bottom: 1rem;
     }
 
@@ -311,12 +311,12 @@
     }
 
     .subheading1, .subheading2, .subheading3 {
-        font-size:1.375rem;
+        font-size: 1.375rem;
         margin-bottom: 6px;
     }
 
     .step1-para, .step2-para, .step3-para {
-        font-size:1rem;
+        font-size: 1rem;
         max-width: 20rem;
         padding-bottom: 2rem;
     }

@@ -106,20 +106,21 @@
     .res-title{
         text-align: center;
         font-family: "Montserrat ExtraBold", sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin: 0 0 10px;
     }
     .result{
         color: #BD6EFB;;
+        font-weight: bold;
     }
     .emoji{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .res-quote{
         text-align: center;
         font-family: "Montserrat semiBold", sans-serif;
-        font-size: 1rem;
-        max-width: 20rem;
+        font-size: 1.1rem;
+        max-width: 22rem;
         margin: 0 0 1rem;
     }
     .real{
@@ -134,6 +135,7 @@
         padding: 20px;
         font-size: 1.2rem;
         font-family: "Roboto Black", sans-serif;
+        font-weight: bold;
     }
 
     .scrollDown-5 {
