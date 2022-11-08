@@ -4,10 +4,13 @@
 - [x] Develop the offer section
 - [x] Develop the results section
 - [x] Develop the strategy section
-- [ ] Develop the results  pt2 section
-- [ ] Develop the demo section
-- [ ] Develop the calandly section
-- [ ] Develop the footer section
+- [x] Develop the results  pt2 section
+- [x] Develop the demo section
+- [x] Develop the calandly section
+- [x] Develop the footer section
 - [ ] Add animations
-- [x] Make it responsive
+- [x] Make it responsive for desktop
+- [ ] Make it responsive for laptop
+- [ ] Make it responsive for tablet
+- [x] Make it responsive for mobile
 - [ ] Host It
