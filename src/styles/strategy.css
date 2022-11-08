@@ -155,7 +155,7 @@
 
 .step1-para, .step2-para, .step3-para {
     font-family: "Montserrat SemiBold", sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     max-width: 30rem;
 }
 
@@ -210,12 +210,6 @@
     padding-top: 4rem;
     max-width: 40vw;
     max-height: 50vh;
-}
-
-.step2-para {
-    font-family: "Montserrat SemiBold", sans-serif;
-    font-size: 1.25rem;
-    max-width: 30rem;
 }
 
 .strat2 {
