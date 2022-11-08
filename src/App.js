@@ -4,6 +4,8 @@ import './styles/offer.css'
 import './styles/results.css'
 import './styles/strategy.css'
 import './styles/resultsSection2.css'
+import './styles/demoCall.css'
+import './styles/footer.css'
 import mobilePhone from './images/phone.png'
 import resultImage from './images/results-image.png'
 import call from './images/call-1.png'
@@ -12,8 +14,6 @@ import sample from './images/kick-off-1.png'
 import sampleMeeting from './images/sample meeting.png'
 import strat from './images/strat.png'
 import stratergy from './images/stratergy-1.png'
-import arrow from './images/arrows.png'
-
 
 function App() {
     return (
@@ -47,22 +47,22 @@ function App() {
                             increasing the social presence of your brand to build a community that <span
                                 id="loves">loves</span> your service.</p>
                     </div>
-                    <div className="offer-btn">
-                        <a className="scrollDown-2" href="#calandly">
-                            <p className="button-2">Speak To Our Team Today <br/>
-                                <span className="bigger-2">Schedule Your FREE Audit Call Now</span></p>
-                        </a>
-                    </div>
                 </div>
                 <div className="offer-box2">
                     <h2 id="noOffer">Only One Goal So...</h2>
                     <p id="offer-para-2">We don't offer any other services except for Social Media Managment...</p>
                     <ul id="list">
-                        <li><span>Web Design</span></li>
-                        <li><span>Email Marketing</span></li>
-                        <li><span>PR Service</span></li>
-                        <li><span>Paid Ads</span></li>
+                        <li className="offer-list"><span className="offer-li">Web Design</span></li>
+                        <li className="offer-list"><span className="offer-li">Email Marketing</span></li>
+                        <li className="offer-list"><span className="offer-li">PR Service</span></li>
+                        <li className="offer-list"><span className="offer-li">Paid Ads</span></li>
                     </ul>
+                </div>
+                <div className="offer-btn">
+                    <a className="scrollDown-2" href="#calandly">
+                        <p className="button-2">Speak To Our Team Today <br/>
+                            <span className="bigger-2">Schedule Your FREE Audit Call Now</span></p>
+                    </a>
                 </div>
                 <div className="offer-wave">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -93,10 +93,11 @@ function App() {
                         order
                         to attract our target audience matched with a strategy to reach them organically.</p>
 
-                    <div className="results-btn"><a className="scrollDown-3" href="#calandly">
-                        <p className="button-3">Speak To Our Team Today <br/>
-                            <span className="bigger-3">Schedule Your FREE Audit Call Now</span></p>
-                    </a></div>
+                    <div className="results-btn">
+                        <a className="scrollDown-3" href="#calandly">
+                            <p className="button-3">Speak To Our Team Today <br/>
+                                <span className="bigger-3">Schedule Your FREE Audit Call Now</span></p>
+                        </a></div>
                 </div>
                 <div className="results-top-wave">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -123,8 +124,6 @@ function App() {
                     <h2 className="strat-sub">Here's <span className="how"> How </span> It Works</h2>
                 </header>
 
-                {/*<div className="arrow-behind">*/}
-                {/*<div className="arrow"><img className="arrows" src={arrow} alt="arrows"/></div>*/}
                 <div className="strat-images">
                     <div className="first">
                         <div className="circle">1</div>
@@ -203,13 +202,64 @@ function App() {
                         <div className="result3">$0 <br/> <span className="source">In Ads Spent </span></div>
                     </div>
                 </div>
-                {/*<div className="button">*/}
-                {/*    <a className="scrollDown-5" href="#calandly">*/}
-                {/*        <p className="button-5">Do You Want To Go Viral? <br/>*/}
-                {/*            <span className="bigger-5">Schedule Your FREE Audit Call Now</span></p>*/}
-                {/*    </a>*/}
+            </section>
+
+            <section className="demo-container">
+                <div className="calandly">calandly</div>
+                <div className="demo-info">
+                    <h1 className="demo-title">Schedule Your Call With Micheal</h1>
+                    <p className="demo-para">By the end of this call, you will be confident of the magic that our
+                        social
+                        media efforts will perform and the next steps of building an audience that will buy WHATEVER
+                        you
+                        sell</p>
+                    <h2 className="demo-for">This Audit Is Perfect For:</h2>
+                    <div className="list">
+                        <ul>
+                            <li>Businesses too <span className="demo-word"> Busy to Handle their social media</span>
+                            </li>
+                            <li>Businesses looking to <span className="demo-word"> convert social media attention to die hard
+                                    community </span>
+                            </li>
+                            <li>Businesses reluctant to jumping straight into <span
+                                className="demo-word"> paid ads</span></li>
+                            <li>Businesses looking to <span className="demo-word"> capitalise on the ever changing world of
+                                    social media </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="demo-top-wave">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                         preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            className="shape-fill"></path>
+                    </svg>
+                </div>
+                {/*<div className="demo-bottom-wave">*/}
+                {/*    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"*/}
+                {/*         preserveAspectRatio="none">*/}
+                {/*        <path*/}
+                {/*            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"*/}
+                {/*            className="shape-fill"></path>*/}
+                {/*    </svg>*/}
                 {/*</div>*/}
             </section>
+
+            <footer className="footer">
+                <div className="copyright">@2021 JOKINGMEDIA. All Rights Reserved</div>
+                <div className="links">
+                    <a href="https://www.linkedin.com/company/jokingmedia/"
+                       className="fa fa-linkedin-square fa-3x social"/>
+                    <a href="mailto:michael@jokingmedia.com" className="fa fa-envelope-square fa-3x social"/>
+                    <a href="https://www.instagram.com/jokingmedia/?igshid=YmMyMTA2M2Y%3D"
+                       className="fa fa-instagram fa-3x social"/>
+                </div>
+                <div className="developed">
+                    <a href="https://www.linkedin.com/in/adrian-topolski/">Developed By Adrian Topolski</a>
+                </div>
+            </footer>
         </div>
     );
 }

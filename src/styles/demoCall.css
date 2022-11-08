@@ -1,0 +1,184 @@
+/* Top wave */
+.demo-top-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.demo-top-wave svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 192px;
+}
+
+.demo-top-wave .shape-fill {
+    fill: white;
+}
+/* Bottom wave */
+.demo-bottom-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.demo-bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 192px;
+}
+
+.demo-bottom-wave .shape-fill {
+    fill: white;
+}
+.demo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    background-color: rgba(243, 243, 243, 1);
+}
+
+.demo-head{
+    text-align: center;
+    font-family: "Helvetica Rounded", sans-serif;
+    font-size: 2.188rem;
+    margin: 0 0 1.5rem;
+}
+
+.calandly{
+    height: 70vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5rem;
+}
+.demo-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem ;
+}
+
+.demo-title{
+    font-family:  Montserrat, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    color: #BD6EFB;
+    margin: 0 0 20px;
+}
+
+.demo-para{
+    font-family:  Montserrat, Helvetica, sans-serif;
+    color: #2D2D2D;
+    font-size:1.125rem;
+    max-width: 26rem;
+    margin: 0 0 20px;
+
+}
+
+.demo-for{
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #BD6EFB;
+    margin: 0 0 5px;
+}
+
+.list {
+    font-family:  Montserrat, Helvetica, sans-serif;
+    color: #2D2D2D;
+    text-align: center;
+    font-size:1.125rem;
+    max-width: 28rem;
+    margin: 0;
+    padding: 0;
+}
+
+.list ul {
+    display: inline-block;
+    padding-left: 1.5rem;
+}
+
+.list ul li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.demo-word{
+    font-weight: bold;
+    color: #191818;
+}
+
+/*Mobile Phone*/
+@media only screen and (max-width: 480px) {
+    .demo-container{
+        padding: 7rem 10px 4rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .calandly{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        width: 80vw;
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+    .demo-info{
+        font-size: 1rem;
+        max-width: 20rem;
+        padding-bottom: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .demo-title{
+        text-align: center;
+        font-size: 1.375rem;
+        margin: 0 0 20px;
+    }
+
+    .demo-para{
+        font-size:1rem;
+        max-width: 20rem;
+        margin: 0 0 20px;
+    }
+
+    .demo-for{
+        font-size: 1.125rem;
+        margin: 0 0 5px;
+    }
+
+    .list {
+        font-size:1rem;
+        max-width: 20rem;
+    }
+
+    .list ul {
+        padding-left: 1.2rem;
+    }
+
+    .list ul li {
+        margin: 5px 0;
+    }
+
+    .demo-top-wave svg {
+        height: 15vh;
+    }
+    .demo-bottom-wave  svg {
+        height: 15vh;
+    }
+}
