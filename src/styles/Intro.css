@@ -10,16 +10,14 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
-
-
- .header,.offer, .results, .strategy,.demo-container{
+ .offer, .results, .demo-container {
     position: relative;
     display: flex;
     flex-direction: column;
     padding: 100px;
 }
 
-.header, .offer, .results,.results-2 {
+.header, .offer, .results, .results-2 {
     align-items: center;
 }
 
@@ -32,14 +30,12 @@ html, body {
     background-color: #191818;
     min-width: 100vw;
     max-height: 80vh;
-    /*padding: 2rem 10px 10px;*/
-
+    padding: 60px;
 }
 
 .aboutUs-box {
     display: flex;
     flex-direction: column;
-    /*justify-content: flex-start;*/
 }
 
 .title {
@@ -50,18 +46,18 @@ html, body {
     font-family: "Roboto Black", sans-serif;
     font-weight: bold;
     color: #BD6EFB;
-    font-size: 4.063rem;
+    font-size: 4rem;
 }
 
 .white {
     font-family: "Roboto Black", sans-serif;
     color: white;
-    font-size: 4.063rem;
+    font-size: 4rem;
 }
 
 .aboutUs-description-1, .aboutUs-description-2 {
     color: white;
-    max-width: 30rem;
+    max-width: 35rem;
     font-family: "Roboto", sans-serif;
     font-size: 1.875rem;
     margin: 0;
@@ -126,15 +122,19 @@ a:active {
         padding: 0 0 0 15px;
         height: 36vh;
     }
-    .title{
+
+    .title {
         padding-right: 1rem;
     }
+
     .purple, .white {
         font-size: 1.375rem;
     }
-    .aboutUs-box{
+
+    .aboutUs-box {
         display: flex;
     }
+
     .aboutUs-description-1, .aboutUs-description-2 {
         font-size: 0.875rem;
         max-width: 12rem;

@@ -22,8 +22,7 @@
 /* Offer */
 .offer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-evenly;
+    grid-template-columns: auto auto;
     gap: 1rem;
     padding-bottom: 0;
     padding-top: 12rem;
@@ -93,7 +92,6 @@
 .bigger-2 {
     font-size: 1.375rem;
 }
-
 
 #noOffer {
     font-family: "Montserrat ExtraBold", sans-serif;

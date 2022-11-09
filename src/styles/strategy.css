@@ -4,7 +4,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .strat {
@@ -87,7 +88,7 @@
 .step-1, .step-2, .step-3 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .step-1 {
@@ -129,6 +130,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.strat1-img{
+    padding-right: 5rem;
 }
 
 .calling-img {
@@ -196,6 +200,10 @@
     max-width: 35vw;
     max-height: 40vh;
 }
+/*.strat1,.strat2,.strat3,.strat1-img,.strategy-img2,.kickOff-img{*/
+/*    max-width: 30rem;*/
+/*}*/
+
 
 /*Mobile Phone*/
 @media only screen and (max-width: 480px) {

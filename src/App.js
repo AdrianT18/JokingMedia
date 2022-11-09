@@ -8,7 +8,7 @@ import './styles/demoCall.css'
 import './styles/footer.css'
 import mobilePhone from './images/phone.png'
 import resultImage from './images/results-image.png'
-import call from './images/call-1.png'
+import call from './images/call.png'
 import calling from './images/calling.png'
 import sample from './images/kick-off-1.png'
 import sampleMeeting from './images/sample meeting.png'
@@ -37,7 +37,6 @@ function App() {
             </section>
 
             <section className="offer">
-                <div>
                     <div className="offer-box1">
                         <h1 id="offer-title">What We Offer</h1>
                         <h1 id="offer-subheading">Social Media Management</h1>
@@ -47,7 +46,6 @@ function App() {
                             increasing the social presence of your brand to build a community that <span
                                 id="loves">loves</span> your service.</p>
                     </div>
-                </div>
                 <div className="offer-box2">
                     <h2 id="noOffer">Only One Goal So...</h2>
                     <p id="offer-para-2">We don't offer any other services except for Social Media Managment...</p>
@@ -140,7 +138,6 @@ function App() {
                         <img className="kick-off" src={sample} alt="paint sample"/>
                         <h2 className="sub"> Kick Off</h2>
                     </div>
-                    {/*</div>*/}
                 </div>
 
                 <div className="step-1">
