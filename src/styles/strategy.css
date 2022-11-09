@@ -47,8 +47,9 @@
 
 
 .call-img, .strat-img, .kick-off {
-    max-height: 10vh;
-    max-width: 10vw;
+    width: 100%;
+    max-width: 5rem;
+    height: auto;
     margin-bottom: 1rem;
 }
 
@@ -131,34 +132,11 @@
     align-items: center;
 }
 
-
 .calling-img {
     align-items: center;
-    max-width: 35vw;
-    max-height: 35vh;
-}
-
-.scrollDown-4 {
-    display: flex;
-    flex-direction: column;
-    border: 0;
-    border-radius: 2rem;
-    width: 25rem;
-    background-image: linear-gradient(to right, #D786F8, #8196FF);
-    margin-top: 2rem;
-}
-
-.button-4 {
-    margin: 10px;
-    font-family: "Roboto Black", sans-serif;
-    font-weight: bold;
-    font-size: 1.375rem;
-    color: white;
-    text-align: center;
-}
-
-.bigger-4 {
-    font-size: 1.125rem;
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
 }
 
 /*Step 02*/
@@ -175,8 +153,9 @@
 
 .strategy-img2 {
     padding-top: 4rem;
-    max-width: 35vw;
-    max-height: 40vh;
+    width: 100%;
+    max-width: 35rem;
+    height: auto;
 }
 
 .strat2 {
@@ -194,8 +173,9 @@
 }
 .kickOff-img {
     padding-top: 4rem;
-    max-width: 35vw;
-    max-height: 40vh;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
 }
 /*.strat1,.strat2,.strat3,.strat1-img,.strategy-img2,.kickOff-img{*/
 /*    max-width: 30rem;*/
@@ -236,8 +216,9 @@
 
 
     .call-img,.strat-img, .kick-off {
-        max-height: 8vh;
-        max-width: 14vw;
+        width: 100%;
+        max-width: 4rem;
+        height: auto;
         margin-bottom: 1rem;
     }
 
@@ -292,20 +273,9 @@
     }
 
     .calling-img {
-        max-width: 100vw;
-        max-height: 40vh;
-    }
-
-    .scrollDown-4 {
-        width: 20rem;
-    }
-
-    .button-4 {
-        font-size: 1rem;
-    }
-
-    .bigger-4 {
-        font-size: 0.875rem;
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
     }
 
     /*Step 02*/
@@ -316,8 +286,9 @@
 
     .strategy-img2 {
         padding-top: 0;
-        max-width: 90vw;
-        max-height: 30vh;
+        width: 100%;
+        max-width: 22rem;
+        height: auto;
     }
 
     /*Step 03*/
@@ -326,8 +297,9 @@
     }
 
     .kickOff-img {
-        max-height: 40vh;
-        max-width: 40vh;
+        width: 100%;
+        max-width: 22rem;
+        height: auto;
     }
 }
 @media only screen and (min-device-width:1200px) and (max-device-width: 1600px) {
@@ -393,16 +365,4 @@
         max-height: 30vh;
     }
 
-    .scrollDown-4 {
-        width: 22rem;
-    }
-    .button-4 {
-        font-size: 1.125rem;
-        color: white;
-        text-align: center;
-    }
-
-    .bigger-4 {
-        font-size:1rem;
-    }
 }

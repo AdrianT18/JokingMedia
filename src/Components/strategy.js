@@ -64,10 +64,18 @@ export default function Strategy() {
                 <div className="strat1-img">
                     <img className="calling-img" src={calling}
                          alt="people connected around a mobile phone"/>
-                    <a className="scrollDown-4" href="#calandly">
-                        <p className="button-4">Speak To Our Team Today <br/>
-                            <span className="bigger-4">Schedule Your FREE Audit Call Now</span></p>
-                    </a>
+
+                    <motion.div className="btn4"
+                                whileHover={{
+                                    scale: 1.2,
+                                    transition: {duration: 0.5},
+                                }}
+                                whileTap={{scale: 0.9}}>
+                        <a className="scrollDown-3" href="#calandly">
+                            <p className="button-3">Speak To Our Team Today <br/>
+                                <span className="bigger">Schedule Your FREE Audit Call Now</span></p>
+                        </a>
+                    </motion.div>
                 </div>
             </div>
             <div className="step-2" >

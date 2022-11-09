@@ -1,8 +1,5 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {useEffect} from "react";
-import {useInView} from "react-intersection-observer"
-import {useAnimation} from "framer-motion";
 
 export default function Offer() {
     return (
@@ -33,12 +30,18 @@ export default function Offer() {
                     <li className="offer-list"><span className="offer-li">Paid Ads</span></li>
                 </ul>
             </motion.div>
-            <div className="offer-btn">
-                <a className="scrollDown-2" href="#calandly">
-                    <p className="button-2">Speak To Our Team Today <br/>
-                        <span className="bigger-2">Schedule Your FREE Audit Call Now</span></p>
+
+            <motion.div className="btn2"
+                 whileHover={{
+                     scale: 1.2,
+                     transition: {duration: 0.5},
+                 }}
+                 whileTap={{scale: 0.9}}>
+                <a className="scrollDown-1" href="#calandly">
+                    <p className="button-1">Speak To Our Team Today <br/>
+                        <span className="bigger">Schedule Your FREE Audit Call Now</span></p>
                 </a>
-            </div>
+            </motion.div>
             <div className="offer-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                      preserveAspectRatio="none">

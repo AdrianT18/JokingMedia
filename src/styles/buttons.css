@@ -1,0 +1,113 @@
+.scrollDown,.scrollDown-1,.scrollDown-2,.scrollDown-3 {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, #D786F8, #8196FF);
+    width: 30rem;
+}
+
+.button-1{
+    margin: 1rem;
+    font-family: "Roboto Black", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.bigger {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.125rem;
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+}
+
+.btn3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/*Button 4*/
+.scrollDown-3 {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, #D786F8, #8196FF);
+    width: 25rem;
+    margin-top: 2rem;
+}
+
+.button-3 {
+    margin: 1rem;
+    font-family: "Roboto Black", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.bigger-3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    /*Buttons*/
+    .scrollDown, .scrollDown-1, .scrollDown-2, .scrollDown-3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 12rem;
+    }
+
+    .button-1,.button-2,.button-3 {
+        margin: 10px;
+        font-size: 0.75rem;
+    }
+
+    .bigger,.bigger-2 {
+        font-size:0.625rem;
+    }
+    /*Button 1*/
+    .btn1 {
+        margin-top: 0;
+    }
+
+    /*Button 2*/
+    .btn2 {
+        display: flex;
+        justify-content: center;
+    }
+    /*Button 3*/
+    .btn3 {
+        margin-top:0;
+    }
+    /*Button 4*/
+
+}
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .scrollDown {
+        margin-top: 15px;
+        width: 12rem;
+    }
+
+    .button-1 {
+        font-size: 0.75rem;
+        margin: 10px;
+    }
+
+    .bigger {
+        font-size: 0.625rem;
+    }
+}
