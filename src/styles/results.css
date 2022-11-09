@@ -114,16 +114,13 @@
 /* Responsive design for mobile phone*/
 @media only screen and (max-width: 480px) {
     section.results{
-        /*padding: 150px 150px 120px;*/
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*padding: 8rem 10px 7rem;*/
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 8rem;
         margin-top: 0;
-
     }
     .results-img {
         visibility: hidden;

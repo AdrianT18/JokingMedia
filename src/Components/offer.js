@@ -5,11 +5,11 @@ import {useInView} from "react-intersection-observer"
 import {useAnimation} from "framer-motion";
 
 export default function Offer() {
+
     /*Animation For Offer*/
     const {ref, inView} = useInView();
     const animation = useAnimation();
     useEffect(() => {
-        console.log("use effect hook, inView = ", inView);
         if (inView) {
             animation.start({
                 x: 0,
@@ -20,6 +20,22 @@ export default function Offer() {
         }
         if (!inView) {
             animation.start({x: '-100vw'})
+        }
+    }, [inView]);
+
+    /*Animation For NoOffer*/
+    const animation1 = useAnimation();
+    useEffect(() => {
+        if (inView) {
+            animation1.start({
+                x: 0,
+                transition: {
+                    type: 'spring', duration: 1.5, bounce: 0.3
+                }
+            });
+        }
+        if (!inView) {
+            animation1.start({x: '100vw'})
         }
     }, [inView]);
 
@@ -34,7 +50,7 @@ export default function Offer() {
                     increasing the social presence of your brand to build a community that <span
                         id="loves">loves</span> your service.</p>
             </motion.div>
-            <div className="offer-box2">
+            <motion.div className="offer-box2" animate={animation1}>
                 <h2 id="noOffer">Only One Goal So...</h2>
                 <p id="offer-para-2">We don't offer any other services except for Social Media Managment...</p>
                 <ul id="list">
@@ -43,7 +59,7 @@ export default function Offer() {
                     <li className="offer-list"><span className="offer-li">PR Service</span></li>
                     <li className="offer-list"><span className="offer-li">Paid Ads</span></li>
                 </ul>
-            </div>
+            </motion.div>
             <div className="offer-btn">
                 <a className="scrollDown-2" href="#calandly">
                     <p className="button-2">Speak To Our Team Today <br/>

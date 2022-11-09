@@ -5,10 +5,26 @@ import {useInView} from "react-intersection-observer"
 import {useAnimation} from "framer-motion";
 
 export default function DemoCall() {
+    /*Animation For strategy demo call*/
+    const {ref, inView} = useInView();
+    const animation5 = useAnimation();
+    useEffect(() => {
+        if (inView) {
+            animation5.start({
+                x: 0,
+                transition: {
+                    type: 'spring', duration: 1.5, bounce: 0.2
+                }
+            });
+        }
+        if (!inView) {
+            animation5.start({x: '100vw'})
+        }
+    }, [inView]);
     return (
-        <section className="demo-container">
+        <section ref={ref} className="demo-container">
             <div id="calandly">calandly</div>
-            <div className="demo-info">
+            <motion.div className="demo-info" animate="animation5">
                 <h1 className="demo-title">Schedule Your Call With Micheal</h1>
                 <p className="demo-para">By the end of this call, you will be confident of the magic that our
                     social
@@ -30,7 +46,7 @@ export default function DemoCall() {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </motion.div>
             <div className="demo-top-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                      preserveAspectRatio="none">

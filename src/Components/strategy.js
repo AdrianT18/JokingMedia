@@ -11,6 +11,23 @@ import strat from "../images/strat.png";
 import sampleMeeting from "../images/sample meeting.png";
 
 export default function Strategy() {
+    /*Animation For strategy Images*/
+    const {ref, inView} = useInView();
+    const animation3 = useAnimation();
+    useEffect(() => {
+        if (inView) {
+            animation3.start({
+                x: 0,
+                transition: {
+                    type: 'spring', duration: 1.5, bounce: 0.2
+                }
+            });
+        }
+        if (!inView) {
+            animation3.start({x: '-100vw'})
+        }
+    }, [inView]);
+
     return(
         <section className="strategy">
             <header className="strat">
@@ -18,22 +35,22 @@ export default function Strategy() {
                 <h2 className="strat-sub">Here's <span className="how"> How </span> It Works</h2>
             </header>
 
-            <div className="strat-images">
-                <div className="first">
+            <div ref={ref} className="strat-images">
+                <motion.div className="first" animate={animation3}>
                     <div className="circle">1</div>
                     <img className="call-img" src={call} alt="mobile phone icon"/>
                     <h2 className="sub">Initial Call</h2>
-                </div>
-                <div className="second">
+                </motion.div>
+                <motion.div className="second" animate={animation3}>
                     <div className="circle">2</div>
                     <img className="strat-img" src={stratergy} alt="thinking lightbulb"/>
                     <h2 className="sub">Strategy</h2>
-                </div>
-                <div className="third">
+                </motion.div>
+                <motion.div className="third" animate={animation3}>
                     <div className="circle">3</div>
                     <img className="kick-off" src={sample} alt="paint sample"/>
                     <h2 className="sub"> Kick Off</h2>
-                </div>
+                </motion.div>
             </div>
 
             <div className="step-1">
@@ -53,7 +70,7 @@ export default function Strategy() {
                     </a>
                 </div>
             </div>
-            <div className="step-2">
+            <div className="step-2" >
                 <div className="strat2-img">
                     <img className="strategy-img2" src={strat}
                          alt="vector of talking through phone"/>
