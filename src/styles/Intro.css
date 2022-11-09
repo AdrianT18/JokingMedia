@@ -160,8 +160,43 @@ a:active {
         height: 20vh;
         position: -webkit-sticky;
     }
+}
+
+@media only screen and (min-device-width:1200px) and (max-device-width: 1600px) {
+    .header,.offer, .results, .strategy,.demo-container{
+        padding: 80px 0;
+    }
+
+    .purple {
+        font-size: 3.4rem;
+    }
+
+    .white {
+        font-size: 3.4rem;
+    }
+
+    .aboutUs-description-1, .aboutUs-description-2 {
+        max-width: 31rem;
+        font-size: 1.75rem;
+    }
+
+    .aboutUs-description-1 {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .button-1 {
+        font-size: 1.625rem;
+    }
+    .mobilePhone-img {
+        max-width: 60vw;
+        max-height: 60vh;
+        transform: rotate(20deg);
+        position: -webkit-sticky;
+    }
 
 }
+
 
 
 

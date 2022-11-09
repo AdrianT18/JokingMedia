@@ -324,5 +324,80 @@
         max-height: 40vh;
         max-width: 40vh;
     }
+}
+@media only screen and (min-device-width:1200px) and (max-device-width: 1600px) {
+    .strategy {
+        padding: 80px;
+    }
 
+    .strat-title {
+        font-size: 2rem;
+    }
+
+    .strat-sub {
+        font-size: 2rem;
+    }
+
+    .strat-images {
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+
+
+    .call-img,.strat-img, .kick-off {
+        max-height: 9vh;
+        max-width: 9vw;
+    }
+
+    .sub{
+        font-size: 1.25rem;
+    }
+    .first, .second, .third {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .circle {
+        height: 60px;
+        width: 60px;
+        margin-left: -30px;
+        top: -30px;
+        font-size: 1.75rem;
+    }
+
+    /*Step 01*/
+    .step-1 {
+        margin-top: 3rem;
+    }
+
+    .heading1, .heading2, .heading3 {
+        font-size: 1.125rem;
+    }
+
+    .subheading1, .subheading2, .subheading3 {
+        font-size: 1.5rem;
+    }
+
+    .step1-para, .step2-para, .step3-para {
+        font-size: 1.25rem;
+    }
+
+    .calling-img {
+        align-items: center;
+        max-width: 30vw;
+        max-height: 30vh;
+    }
+
+    .scrollDown-4 {
+        width: 22rem;
+    }
+    .button-4 {
+        font-size: 1.125rem;
+        color: white;
+        text-align: center;
+    }
+
+    .bigger-4 {
+        font-size:1rem;
+    }
 }
