@@ -1,4 +1,8 @@
 import React from "react";
+import {motion} from "framer-motion";
+import {useEffect} from "react";
+import {useInView} from "react-intersection-observer"
+import {useAnimation} from "framer-motion";
 import './styles/Intro.css'
 import './styles/offer.css'
 import './styles/results.css'
@@ -16,7 +20,27 @@ import strat from './images/strat.png'
 import stratergy from './images/stratergy-1.png'
 
 function App() {
+
+    /*Animation For Offer*/
+    const {ref, inView} = useInView();
+    const animation = useAnimation();
+    useEffect(()=>{
+        console.log("use effect hook, inView = ", inView);
+        if (inView){
+            animation.start({
+                x: 0,
+                transition: {
+                    type: 'spring', duration: 1.5, bounce: 0.3 }
+            });
+        }
+        if (!inView){
+            animation.start({x: '-100vw'})
+        }
+        }, [inView]);
+
     return (
+
+
         <div className="container">
             <section className="header">
                 <div className="aboutUs-box">
@@ -36,16 +60,16 @@ function App() {
                                             alt="A vector of a mobile phone"/></div>
             </section>
 
-            <section className="offer">
-                    <div className="offer-box1">
-                        <h1 id="offer-title">What We Offer</h1>
-                        <h1 id="offer-subheading">Social Media Management</h1>
-                        <h3 id="offer-quote">We drive sales with social media content</h3>
-                        <p id="offer-para">We do one thing and we do it well. We ensure that we focus on social media
-                            content &
-                            increasing the social presence of your brand to build a community that <span
-                                id="loves">loves</span> your service.</p>
-                    </div>
+            <section ref={ref} className="offer">
+                <motion.div className="offer-box1" animate={animation}>
+                    <h1 id="offer-title">What We Offer</h1>
+                    <h1 id="offer-subheading">Social Media Management</h1>
+                    <h3 id="offer-quote">We drive sales with social media content</h3>
+                    <p id="offer-para">We do one thing and we do it well. We ensure that we focus on social media
+                        content &
+                        increasing the social presence of your brand to build a community that <span
+                            id="loves">loves</span> your service.</p>
+                </motion.div>
                 <div className="offer-box2">
                     <h2 id="noOffer">Only One Goal So...</h2>
                     <p id="offer-para-2">We don't offer any other services except for Social Media Managment...</p>

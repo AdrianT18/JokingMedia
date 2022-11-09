@@ -23,6 +23,7 @@
 .offer {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: space-around;
     gap: 1rem;
     padding-bottom: 0;
     padding-top: 12rem;
