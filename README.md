@@ -8,9 +8,9 @@
 - [x] Develop the demo section
 - [x] Develop the calandly section
 - [x] Develop the footer section
-- [ ] Add animations
+- [x] Add animations
 - [x] Make it responsive for desktop
-- [ ] Make it responsive for laptop
+- [x] Make it responsive for laptop
 - [ ] Make it responsive for tablet
 - [x] Make it responsive for mobile
 - [ ] Host It
