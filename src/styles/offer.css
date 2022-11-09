@@ -56,7 +56,7 @@
 
 #offer-para {
     margin-top: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #offer-para-2 {
@@ -156,10 +156,6 @@
         margin-right: 0;
         max-width: 22rem;
     }
-
-    .offer-btn{
-        display: flex;
-    }
     .button-2 {
         font-size: 1rem;
         margin: 10px;
@@ -206,6 +202,50 @@
     .offer-wave svg {
         height: 100px;
     }
+}
 
+@media only screen and (min-device-width:1200px) and (max-device-width: 1600px) {
+    /* Offer */
+    .offer {
+        padding: 12rem 5rem 0;
+    }
+
+    #offer-title {
+        font-size: 1.75rem;
+    }
+
+    #offer-subheading {
+        font-size: 1.75rem;
+    }
+
+    #offer-quote {
+        font-size: 1.625rem;
+    }
+
+    #offer-para {
+        font-size: 1.5rem;
+        max-width: 35rem;
+    }
+
+    #offer-para-2 {
+        max-width: 35rem;
+        font-size: 1.5rem;
+    }
+
+    .button-2 {
+        font-size: 1.625rem;
+    }
+
+    .bigger-2 {
+        font-size: 0.875rem;
+    }
+
+    .scrollDown-2 {
+        max-width: 30rem;
+    }
+
+    #list {
+        font-size: 1.5rem;
+    }
 
 }
