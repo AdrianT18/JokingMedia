@@ -134,7 +134,7 @@
         height: 15vh;
     }
 }
-@media (min-width: 1025px) and (max-width: 1280px){
+@media (min-width: 1200px) and (max-width: 1600px){
     /* Main */
     .results-img {
         max-width: 100vh;
