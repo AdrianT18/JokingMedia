@@ -87,7 +87,7 @@
 }
 
 /* Responsive design for mobile phone*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
     section.results{
         display: flex;
         flex-direction: column;
@@ -134,7 +134,7 @@
         height: 15vh;
     }
 }
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1280px){
     /* Main */
     .results-img {
         max-width: 100vh;
@@ -150,4 +150,41 @@
         max-width: 40rem;
     }
 
+}
+
+/*For Tablets portrait*/
+@media (min-width: 768px) and (max-width: 834px){
+    .results-img {
+        width: 100%;
+        max-width: 28rem;
+        height: auto;
+    }
+    .mobile-results-img{
+        visibility: hidden;
+        display: none;
+    }
+
+    .results-Title{
+        text-align: center;
+        font-size: 1.125rem;
+        margin-bottom: 10px;
+    }
+    .results-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .results-para,.results-para2{
+        max-width: 22rem;
+        font-size: 1rem;
+    }
+    .results-para{
+    }
+
+    .results-top-wave svg {
+        height: 15vh;
+    }
+    .results-bottom-wave  svg {
+        height: 15vh;
+    }
 }

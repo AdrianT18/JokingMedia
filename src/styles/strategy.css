@@ -187,7 +187,7 @@
 
 
 /*Mobile Phone*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
 
     /*Title + step images*/
     .strategy {
@@ -309,7 +309,7 @@
         height: auto;
     }
 }
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     .strategy {
         padding: 80px;
     }
@@ -372,4 +372,126 @@
         height: auto;
     }
 
+}
+
+/*For Tablets portrait*/
+@media (min-width: 768px) and (max-width: 834px){
+    /*Title + step images*/
+    .strategy {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 3rem 10px 1rem;
+    }
+    .strategy-3{
+        padding-bottom: 30px;
+    }
+    .strat{
+        margin-bottom: 3rem;
+    }
+
+    .strat-title {
+        text-align: center;
+        font-size:1.875em;
+    }
+
+    .strat-sub {
+        text-align: center;
+        font-size: 1.875rem;
+    }
+
+    .strat-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+
+    .call-img,.strat-img, .kick-off {
+        width: 100%;
+        max-width: 6rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .first, .second, .third {
+        max-width: 60vw;
+        max-height: 24vh;
+        padding: 3rem 4rem 3rem;
+    }
+
+    .circle {
+        height: 60px;
+        width: 60px;
+        margin-left: -28px;
+        top: -28px;
+        padding-top: 4px;
+        font-size: 2.25rem;
+    }
+
+    .sub {
+        font-size: 1.5rem;
+    }
+
+    /*Step 1*/
+    .step-1, .step-2, .step-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-1 {
+        margin-top: 1rem;
+    }
+
+    .strat1 {
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .heading1, .heading2, .heading3 {
+        font-size: 1.5rem;
+        margin-bottom: 6px;
+    }
+
+    .subheading1, .subheading2, .subheading3 {
+        font-size:1.75rem;
+        margin-bottom: 6px;
+    }
+
+    .step1-para, .step2-para, .step3-para {
+        font-size: 1.5rem;
+        max-width: 35rem;
+        padding-bottom: 2rem;
+    }
+
+    .calling-img {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+    }
+
+    /*Step 02*/
+    .strat2 {
+        padding-top: 1.5rem;
+        order: -2;
+    }
+
+    .strategy-img2 {
+        padding-top: 0;
+        width: 100%;
+        max-width: 34rem;
+        height: auto;
+    }
+
+    /*Step 03*/
+    .strat3 {
+        padding-top: 1rem;
+    }
+
+    .kickOff-img {
+        width: 100%;
+        max-width: 34rem;
+        height: auto;
+    }
 }

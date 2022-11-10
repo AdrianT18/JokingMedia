@@ -34,7 +34,6 @@ export default function Offer() {
                         id="loves">loves</span> your service.</p>
             </motion.div>
             <motion.div className="offer-box2" animate = {animation}>
-                <h1 id="offer-title">What We Offer</h1>
                 <h2 id="noOffer">Only One Goal So...</h2>
                 <p id="offer-para-2">We don't offer any other services except for Social Media Managment...</p>
                 <ul id="list">

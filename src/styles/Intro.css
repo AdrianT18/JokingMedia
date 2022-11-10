@@ -93,7 +93,7 @@ a:active {
 }
 
 /* Responsive design for mobile phone*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
     .header {
         padding: 0 0 0 15px;
         height: 36vh;
@@ -126,7 +126,7 @@ a:active {
 }
 
 /*For Laptops*/
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1280px){
     .header, .offer, .results, .strategy, .demo-container {
         padding: 80px 0;
     }
@@ -162,7 +162,33 @@ a:active {
     }
 }
 
-/*For Tablets Landscape*/
+/*For Tablets portrait*/
+@media (min-width: 768px) and (max-width: 834px){
+    .header {
+        height: 40vh;
+    }
+
+    .purple, .white {
+        font-size:3rem;
+    }
+
+    .aboutUs-box {
+        display: flex;
+    }
+
+    .aboutUs-description-1, .aboutUs-description-2 {
+        font-size:1.5rem;
+        max-width: 25rem;
+        margin: 10px 0 0;
+    }
+
+    .mobilePhone-img {
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+        position: -webkit-sticky;
+    }
+}
 
 
 

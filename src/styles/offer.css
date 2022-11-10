@@ -100,8 +100,9 @@
 }
 
 /* Responsive design for mobile phone*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
     .offer {
+        margin: -1px;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -169,7 +170,7 @@
     }
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     /* Offer */
     .offer {
         padding: 12rem 5rem 0;
@@ -200,5 +201,61 @@
     #list {
         font-size: 1.5rem;
     }
+}
+/*For Tablets portrait*/
+@media (min-width: 768px) and (max-width: 834px){
+    .offer {
+        margin: -1px;
+        padding: 10rem 2rem 0;
+    }
+    #offer-title {
+        font-size: 1.375rem;
+        margin-bottom: 0;
+    }
 
+    #offer-subheading {
+        font-size: 1.375rem;
+        margin-bottom: 5px;
+    }
+
+    #offer-quote {
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+    }
+
+    #offer-para {
+        font-size: 1.125rem;
+        margin-bottom: 5px;
+        margin-top: 4px;
+        margin-right: 0;
+        max-width: 25rem;
+    }
+
+    .offer-box2 {
+        margin-top: 0;
+    }
+
+    #noOffer {
+        font-size: 1.25rem;
+        margin-top: 6px;
+        margin-bottom: 4px;
+
+    }
+
+    #offer-para-2 {
+        font-size: 1.125rem;
+        max-width: 25rem;
+    }
+
+    #list {
+        font-size: 1.125rem;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    .offer-btn {
+        justify-content: space-evenly;
+    }
 }

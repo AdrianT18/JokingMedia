@@ -62,7 +62,7 @@
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
     /*Buttons*/
     .scrollDown, .scrollDown-1, .scrollDown-2, .scrollDown-3 {
         margin-top: 15px;
@@ -96,18 +96,52 @@
 
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     .scrollDown {
         margin-top: 15px;
-        width: 12rem;
+        width: 25rem;
     }
 
     .button-1 {
-        font-size: 0.75rem;
+        font-size: 1.2rem;
         margin: 10px;
     }
 
     .bigger {
-        font-size: 0.625rem;
+        font-size: 1rem;
+    }
+}
+
+/*For Tablets portrait*/
+@media (min-width: 768px) and (max-width: 834px){
+
+    /*Buttons*/
+    .scrollDown, .scrollDown-1, .scrollDown-2 {
+        margin-top: 1rem;
+        margin-bottom: 15px;
+        width: 22rem;
+    }
+
+    .scrollDown-3{
+        margin-top: 1rem;
+        margin-bottom: 15px;
+        width: 25rem;
+    }
+
+    .button-1,.button-2 {
+        margin: 10px;
+        font-size: 1.375rem;
+    }
+
+    .button-3{
+        font-size: 1.5rem;
+    }
+
+    .bigger,.bigger-2 {
+        font-size:1rem;
+    }
+    /*Button 1*/
+    .btn1 {
+        margin-top: 0;
     }
 }

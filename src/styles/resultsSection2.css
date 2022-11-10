@@ -60,7 +60,7 @@
 }
 
 /*Mobile Phone*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
     .results-2 {
         display: grid;
         grid-template-columns: 1fr;
@@ -117,7 +117,7 @@
 
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     .results-container {
         padding: 3rem 8rem;
     }
@@ -142,6 +142,35 @@
     .source{
         font-weight: normal;
     }
+}
 
+/*For Tablets portrait*/
+@media (min-width: 768px) and (max-width: 834px){
+    .results-container {
+        margin-top: 4rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding: 3rem 2rem;
+    }
+    .res-title {
+        font-size: 1.675rem;
+    }
+    .emoji {
+        font-size: 1.7rem;
+    }
 
+    .res-quote {
+        font-size: 1.675rem;
+        margin: 0 0 1rem;
+    }
+
+    .result1, .result2, .result3 {
+        padding: 20px;
+        font-size: 1.625rem;
+        font-weight: bold;
+    }
+
+    .source{
+        font-weight: normal;
+    }
 }

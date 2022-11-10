@@ -120,7 +120,7 @@
 }
 
 /*Mobile Phone*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
     .demo-container{
         padding: 7rem 10px 4rem;
         display: flex;
@@ -169,6 +169,68 @@
 
     .list ul {
         padding-left: 1.2rem;
+    }
+
+    .list ul li {
+        margin: 5px 0;
+    }
+
+    .demo-top-wave svg {
+        height: 15vh;
+    }
+    .demo-bottom-wave  svg {
+        height: 15vh;
+    }
+}
+
+
+/*For Tablets portrait*/
+@media (min-width: 768px) and (max-width: 834px){
+    .demo-container{
+        padding: 7rem 10px 4rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .calandly{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        width: 80vw;
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+    .demo-info{
+        max-width: 50rem;
+        justify-content: center;
+        padding: 5rem 0 2rem;
+    }
+
+    .demo-title{
+        font-size: 2rem;
+        margin: 0 0 20px;
+    }
+
+    .demo-para{
+        font-size:1.625rem;
+        max-width: 40rem;
+        margin: 0 0 20px;
+    }
+
+    .demo-for{
+        font-size: 1.625rem;
+        margin: 0 0 5px;
+    }
+
+    .list {
+        font-size:1.625rem;
+        max-width: 30rem;
+    }
+
+    .list ul {
+        padding-left: 1.5rem;
     }
 
     .list ul li {
