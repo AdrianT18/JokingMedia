@@ -120,7 +120,7 @@
 }
 
 /*Mobile Phone*/
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 680px) {
     .demo-container{
         padding: 7rem 10px 4rem;
         display: flex;

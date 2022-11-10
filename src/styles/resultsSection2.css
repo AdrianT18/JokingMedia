@@ -60,7 +60,7 @@
 }
 
 /*Mobile Phone*/
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 680px) {
     .results-2 {
         display: grid;
         grid-template-columns: 1fr;

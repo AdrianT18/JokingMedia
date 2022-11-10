@@ -62,7 +62,7 @@
 
 
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 680px) {
     /*Buttons*/
     .scrollDown, .scrollDown-1, .scrollDown-2, .scrollDown-3 {
         margin-top: 15px;
