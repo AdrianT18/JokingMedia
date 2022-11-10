@@ -7,24 +7,24 @@ import {useAnimation} from "framer-motion";
 export default function DemoCall() {
     /*Animation For strategy demo call*/
     const {ref, inView} = useInView();
-    const animation6 = useAnimation();
+    const animation10 = useAnimation();
     useEffect(() => {
         if (inView) {
-            animation6.start({
-                x: 0,
+            animation10.start({
+                y: 0,
                 transition: {
-                    type: 'spring', duration: 1.5, bounce: 0.2
+                    type: 'spring', duration: 1.5, bounce: 0.3
                 }
             });
         }
         if (!inView) {
-            animation6.start({x: '100vw'})
+            animation10.start({y: '-10rem'})
         }
     }, [inView]);
     return (
         <section ref={ref} className="demo-container">
             <div id="calandly">calandly</div>
-            <motion.div className="demo-info" animate="animation6">
+            <motion.div  className="demo-info" animate= {animation10}>
                 <h1 className="demo-title">Schedule Your Call With Micheal</h1>
                 <p className="demo-para">By the end of this call, you will be confident of the magic that our
                     social

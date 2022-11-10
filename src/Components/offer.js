@@ -1,13 +1,30 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {motion} from "framer-motion";
+import {useInView} from "react-intersection-observer"
+import {useAnimation} from "framer-motion";
 
 export default function Offer() {
+
+    /*Animation For offer*/
+    const {ref, inView} = useInView();
+    const animation = useAnimation();
+    useEffect(() => {
+        if (inView) {
+            animation.start({
+                y: 0,
+                transition: {
+                    type: 'spring', duration: 1.5, bounce: 0.3
+                }
+            });
+        }
+        if (!inView) {
+            animation.start({y: '-100vw'})
+        }
+    }, [inView]);
+
     return (
-        <section className="offer">
-            <motion.div className="offer-box1"
-                        initial={{x: '-100vw'}}
-                        animate={{x: 0}}
-                        transition={{type: 'spring', duration: 1, bounce: 0.3}}>
+        <section ref={ref} className="offer">
+            <motion.div className="offer-box1" animate = {animation}>
                 <h1 id="offer-title">What We Offer</h1>
                 <h1 id="offer-subheading">Social Media Management</h1>
                 <h3 id="offer-quote">We drive sales with social media content</h3>
@@ -16,10 +33,7 @@ export default function Offer() {
                     increasing the social presence of your brand to build a community that <span
                         id="loves">loves</span> your service.</p>
             </motion.div>
-            <motion.div className="offer-box2"
-                        initial={{x: '-100vw'}}
-                        animate={{x: 0}}
-                        transition={{type: 'spring', duration: 1, bounce: 0.3}}>
+            <motion.div className="offer-box2" animate = {animation}>
                 <h1 id="offer-title">What We Offer</h1>
                 <h2 id="noOffer">Only One Goal So...</h2>
                 <p id="offer-para-2">We don't offer any other services except for Social Media Managment...</p>

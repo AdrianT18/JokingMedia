@@ -23,21 +23,6 @@ export default function Results() {
         }
     }, [inView]);
 
-    /*Animation For Result1*/
-    const animation5 = useAnimation();
-    useEffect(() => {
-        if (inView) {
-            animation5.start({
-                x: 0,
-                transition: {
-                    type: 'spring', duration: 1.5, bounce: 0.3
-                }
-            });
-        }
-        if (!inView) {
-            animation5.start({x: '-100vw'})
-        }
-    }, [inView]);
     return (
         <section ref={ref} className="results">
             <motion.div animate={animation2}>
@@ -46,7 +31,7 @@ export default function Results() {
             <div className="results-main">
                 <h1 className="results-Title"> An Agency Proud To Show-Case <span
                     className="results-wrd"> Results! </span></h1>
-                <motion.div animate={animation5}><img className="mobile-results-img" src={resultImage}
+                <motion.div animate={animation2}><img className="mobile-results-img" src={resultImage}
                                                       alt="Our results show cased"/>
                 </motion.div>
                 <p className="results-para"> A lot of people in social media management only focus on how posts

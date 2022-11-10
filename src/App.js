@@ -11,6 +11,9 @@ import Intro from './Components/Intro'
 import Offer from './Components/offer'
 import Results from './Components/results'
 import Strategy from './Components/strategy'
+import Step1 from './Components/step1'
+import Step2 from './Components/step2'
+import Step3 from './Components/step3'
 import ResultSection2 from './Components/resultSection2'
 import DemoCall from './Components/demoCall'
 import Footer from './Components/footer'
@@ -23,6 +26,9 @@ function App() {
           <Offer/>
           <Results/>
           <Strategy/>
+          <Step1/>
+          <Step2/>
+          <Step3/>
           <ResultSection2/>
           <DemoCall/>
           <Footer/>

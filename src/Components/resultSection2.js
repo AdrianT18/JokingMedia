@@ -12,14 +12,14 @@ export default function ResultSection2() {
     useEffect(() => {
         if (inView) {
             animation4.start({
-                x: 0,
+                y: 0,
                 transition: {
-                    type: 'spring', duration: 1.5, bounce: 0.2
+                    type: 'spring', duration: 1.5, bounce: 0.3
                 }
             });
         }
         if (!inView) {
-            animation4.start({x: '-100vw'})
+            animation4.start({y: '-5rem'})
         }
     }, [inView]);
     return(

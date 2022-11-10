@@ -134,7 +134,7 @@
         height: 15vh;
     }
 }
-@media only screen and (min-device-width:1200px) and (max-device-width: 1600px) {
+@media only screen and (min-device-width: 1024px) {
     /* Main */
     .results-img {
         max-width: 100vh;
