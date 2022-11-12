@@ -70,7 +70,7 @@
 }
 
 .results-Title {
-    font-family: "Montserrat ExtraBold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 2.188rem;
     margin: 0 0 10px;
 }
@@ -80,7 +80,7 @@
 }
 
 .results-para, .results-para2 {
-    font-family: "Montserrat SemiBold", sans-serif;
+    font-family: "Mustica Pro SemBd", sans-serif;
     font-size: 1.5rem;
     max-width: 48rem;
     margin: 10px 0;

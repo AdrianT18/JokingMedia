@@ -30,26 +30,26 @@
 }
 
 #offer-title {
-    font-family: "Montserrat ExtraBold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 1.875rem;
     margin: 0 0 10px;
 }
 
 #offer-subheading {
-    font-family: "Montserrat ExtraBold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 1.875rem;
     color: #BD6EFB;
     margin: 0 0 10px;
 }
 
 #offer-quote {
-    font-family: "Montserrat Bold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 1.75rem;
     margin: 0;
 }
 
 #offer-para {
-    font-family: "Montserrat SemiBold", sans-serif;
+    font-family: "Mustica Pro SemBd", sans-serif;
     font-size: 1.625rem;
     max-width: 50rem;
     margin: 10px 0;
@@ -61,7 +61,7 @@
 }
 
 #offer-para-2 {
-    font-family: "Montserrat SemiBold", sans-serif;
+    font-family: "Mustica Pro SemBd", sans-serif;
     max-width: 40rem;
     font-size: 1.625rem;
     margin: 0;
@@ -72,14 +72,13 @@
     color: #510091;
 }
 #noOffer {
-    font-family: "Montserrat ExtraBold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 1.75rem;
     margin: 0 0 10px;
 }
 
 #list {
-    font-family: "Montserrat Bold", sans-serif;
-    font-weight: bold;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 1.625rem;
     margin: 0;
     padding: 0;

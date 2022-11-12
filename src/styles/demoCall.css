@@ -48,22 +48,11 @@
     background-color: rgba(243, 243, 243, 1);
 }
 
-.demo-head{
-    text-align: center;
-    font-family: "Helvetica Rounded", sans-serif;
-    font-size: 2.188rem;
-    margin: 0 0 1.5rem;
+#calandly{
+    min-width: 320px;
+    height: 630px;
 }
 
-#calandly{
-    height: 70vh;
-    width: 30vw;
-    display: flex;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    padding: 5rem;
-}
 .demo-info{
     display: flex;
     flex-direction: column;
@@ -72,34 +61,34 @@
 }
 
 .demo-title{
-    font-family:  Montserrat, Helvetica, sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 1.75rem;
     color: #BD6EFB;
     margin: 0 0 20px;
 }
 
 .demo-para{
-    font-family:  Montserrat, Helvetica, sans-serif;
+    font-family: "Mustica Pro SemBd", sans-serif;
     color: #2D2D2D;
-    font-size:1.125rem;
-    max-width: 26rem;
+    font-size:1.375rem;
+    max-width: 30rem;
     margin: 0 0 20px;
 
 }
 
 .demo-for{
-    font-family: Montserrat, Helvetica, sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 1.5rem;
     color: #BD6EFB;
     margin: 0 0 5px;
 }
 
 .list {
-    font-family:  Montserrat, Helvetica, sans-serif;
+    font-family: "Mustica Pro SemBd", sans-serif;
     color: #2D2D2D;
     text-align: center;
-    font-size:1.125rem;
-    max-width: 28rem;
+    font-size:1.375rem;
+    max-width: 30rem;
     margin: 0;
     padding: 0;
 }

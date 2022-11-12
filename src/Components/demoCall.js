@@ -3,6 +3,7 @@ import {motion} from "framer-motion";
 import {useEffect} from "react";
 import {useInView} from "react-intersection-observer"
 import {useAnimation} from "framer-motion";
+import {InlineWidget} from "react-calendly";
 
 export default function DemoCall() {
     /*Animation For strategy demo call*/
@@ -21,11 +22,13 @@ export default function DemoCall() {
             animation10.start({y: '-10rem'})
         }
     }, [inView]);
+
     return (
         <section ref={ref} className="demo-container">
-            <div id="calandly">calandly</div>
+            <div id="calandly"><InlineWidget url="https://calendly.com/michaelalalade/growth?hide_gdpr_banner=1"/></div>
+
             <motion.div  className="demo-info" animate= {animation10}>
-                <h1 className="demo-title">Schedule Your Call With Micheal</h1>
+                <h1 className="demo-title">Schedule Your Call With Michael</h1>
                 <p className="demo-para">By the end of this call, you will be confident of the magic that our
                     social
                     media efforts will perform and the next steps of building an audience that will buy WHATEVER

@@ -15,7 +15,7 @@
 
 .res-title {
     text-align: center;
-    font-family: "Helvetica Rounded", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     color: white;
     font-size: 2rem;
     margin: 0 0 10px;
@@ -32,7 +32,7 @@
 .res-quote {
     color: white;
     text-align: center;
-    font-family: "Helvetica Rounded", sans-serif;
+    font-family: Gotham, "Helvetica Rounded", sans-serif;
     font-size: 1.7rem;
     margin: 0 0 1rem;
 }
@@ -51,12 +51,12 @@
 .result1, .result2, .result3 {
     padding: 20px;
     font-size: 1.8rem;
-    font-family: "Helvetica Rounded", sans-serif;
+    font-family: Gotham, "Helvetica Rounded", sans-serif;
     color: white;
 }
 
 .source {
-    font-family: "Helvetica", sans-serif;
+    font-family: Gotham, "Helvetica Rounded", sans-serif;
 }
 
 /*Mobile Phone*/

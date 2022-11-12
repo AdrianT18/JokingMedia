@@ -20,7 +20,7 @@
 }
 
 .strat-title {
-    font-family: "Montserrat ExtraBold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 2.188rem;
     margin: 0 0 10px;
 }
@@ -30,7 +30,7 @@
 }
 
 .strat-sub {
-    font-family: "Montserrat ExtraBold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 2.188rem;
     margin: 0 0 10px;
 }
@@ -68,7 +68,7 @@
     display: block;
     position: relative;
     text-align: center;
-    font-family: "Montserrat Bold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
 }
 
 
@@ -107,25 +107,25 @@
 }
 
 .heading1, .heading2, .heading3 {
-    font-family: "Montserrat SemiBold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 1.375rem;
     margin-bottom: 10px;
 }
 
 .word {
-    font-family: "Montserrat ExtraBold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     color: #BD6EFB;
 }
 
 
 .subheading1, .subheading2, .subheading3 {
-    font-family: "Montserrat Bold", sans-serif;
+    font-family: Gotham, Helvetica, sans-serif;
     font-size: 1.75rem;
     margin-bottom: 10px;
 }
 
 .step1-para, .step2-para, .step3-para {
-    font-family: "Montserrat SemiBold", sans-serif;
+    font-family: "Mustica Pro SemBd", sans-serif;
     font-size: 1.5rem;
     max-width: 40rem;
 }

@@ -16,9 +16,14 @@ export default function Footer() {
                 <a href="https://www.instagram.com/jokingmedia/?igshid=YmMyMTA2M2Y%3D"
                    className="fa fa-instagram fa-3x social"/>
             </div>
-            <div className="developed">
+            <motion.div className="developed"
+                 whileHover={{
+                     scale: 1.2,
+                     transition: {duration: 0.5},
+                 }}
+                 whileTap={{scale: 0.4}}>
                 <a href="https://www.linkedin.com/in/adrian-topolski/">Developed By Adrian Topolski</a>
-            </div>
+            </motion.div>
         </footer>
     )
 }
