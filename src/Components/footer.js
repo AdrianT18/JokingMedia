@@ -1,9 +1,5 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {useEffect} from "react";
-import {useInView} from "react-intersection-observer"
-import {useAnimation} from "framer-motion";
-
 
 export default function Footer() {
     return (

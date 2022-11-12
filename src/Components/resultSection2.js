@@ -27,7 +27,7 @@ export default function ResultSection2() {
         <motion.div className="results-container" animate={animation4}>
             <h1 className="res-title">Our <span className="result">Results</span><span
                 className="emoji"> 🚀</span></h1>
-            <h2 className="res-quote">We make sure that our content we publish for clients produce <span
+            <h2 className="res-quote">We make sure that the content we publish for clients produce <span
                 className="real"> real</span> results.</h2>
             <div className="result-grid">
                 <div className="result1">250M <br/> <span className="source"> Total Views </span></div>
