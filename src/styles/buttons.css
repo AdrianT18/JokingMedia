@@ -1,4 +1,4 @@
-.scrollDown,.scrollDown-1,.scrollDown-2,.scrollDown-3 {
+.scrollDown, .scrollDown-1, .scrollDown-2, .scrollDown-3 {
     display: flex;
     flex-direction: column;
     border: 0;
@@ -7,7 +7,7 @@
     width: 30rem;
 }
 
-.button-1{
+.button-1 {
     margin: 1rem;
     font-family: "Roboto Black", sans-serif;
     font-size: 1.5rem;
@@ -25,7 +25,8 @@
     justify-content: center;
     margin-top: 3.125rem;
 }
-.btn2{
+
+.btn2 {
     display: flex;
     justify-content: center;
 }
@@ -61,23 +62,38 @@
 }
 
 
-
 @media only screen and (max-width: 680px) {
     /*Buttons*/
-    .scrollDown, .scrollDown-1, .scrollDown-2, .scrollDown-3 {
+    .scrollDown {
         margin-top: 15px;
         margin-bottom: 15px;
         width: 12rem;
     }
 
-    .button-1,.button-2,.button-3 {
+    .scrollDown-1, .scrollDown-2, .scrollDown-3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 14rem;
+    }
+
+    .button-1 {
         margin: 10px;
         font-size: 0.75rem;
     }
 
-    .bigger,.bigger-2 {
-        font-size:0.625rem;
+    .bigger {
+        font-size: 0.625rem;
     }
+
+    .button-3 {
+        margin: 10px;
+        font-size: 0.875rem;
+    }
+
+    .bigger-2 {
+        font-size: 0.75rem;
+    }
+
     /*Button 1*/
     .btn1 {
         margin-top: 0;
@@ -88,15 +104,17 @@
         display: flex;
         justify-content: center;
     }
+
     /*Button 3*/
     .btn3 {
-        margin-top:0;
+        margin-top: 0;
     }
+
     /*Button 4*/
 
 }
 
-@media (min-width: 1200px) and (max-width: 1600px){
+@media (min-width: 1200px) and (max-width: 1600px) {
     .scrollDown {
         margin-top: 15px;
         width: 25rem;
@@ -113,7 +131,7 @@
 }
 
 /*For Tablets portrait*/
-@media (min-width: 768px) and (max-width: 834px){
+@media (min-width: 768px) and (max-width: 834px) {
 
     /*Buttons*/
     .scrollDown, .scrollDown-1, .scrollDown-2 {
@@ -122,24 +140,25 @@
         width: 22rem;
     }
 
-    .scrollDown-3{
+    .scrollDown-3 {
         margin-top: 1rem;
         margin-bottom: 15px;
         width: 25rem;
     }
 
-    .button-1,.button-2 {
+    .button-1, .button-2 {
         margin: 10px;
         font-size: 1.375rem;
     }
 
-    .button-3{
+    .button-3 {
         font-size: 1.5rem;
     }
 
-    .bigger,.bigger-2 {
-        font-size:1rem;
+    .bigger, .bigger-2 {
+        font-size: 1rem;
     }
+
     /*Button 1*/
     .btn1 {
         margin-top: 0;

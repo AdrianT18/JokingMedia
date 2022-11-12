@@ -36,7 +36,7 @@ export default function Step2() {
                     <p className="step2-para">After the call I get to work straightaway and create a social media
                         strategy alongside samples of content so you know what things will look like before even
                         officially proceeding. This is done so you can review everything before deciding you want to
-                        work with us. (Which you would want to after seeing the strategy + samples)</p>
+                        work with us.</p>
                 </div>
             </div>
         </section>

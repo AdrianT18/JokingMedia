@@ -51,6 +51,7 @@
 #calandly{
     min-width: 320px;
     height: 630px;
+    position: relative;
 }
 
 .demo-info{

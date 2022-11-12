@@ -8,7 +8,7 @@ export default function Intro() {
             <div className="aboutUs-box">
                 <div className="title"><span className="purple">JOKING</span> <span className="white">MEDIA</span>
                 </div>
-                <p className="aboutUs-description-1">We help coaches, consultants and podcasts get Millions of
+                <p className="aboutUs-description-1">We help coaches, consultants and podcasts get MILLIONS of
                     impressions without spending a penny on ads.</p>
                 <p className="aboutUs-description-2">It’s time to stop burning your profits with ad campaigns
                     that do more harm than good…</p>
