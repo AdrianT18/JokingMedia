@@ -17,21 +17,23 @@ import Step3 from './Components/step3'
 import ResultSection2 from './Components/resultSection2'
 import DemoCall from './Components/demoCall'
 import Footer from './Components/footer'
+import Maintenance from "./maintanace";
 
 
 function App() {
   return(
       <div>
-          <Intro/>
-          <Offer/>
-          <Results/>
-          <Strategy/>
-          <Step1/>
-          <Step2/>
-          <Step3/>
-          <ResultSection2/>
-          <DemoCall/>
-          <Footer/>
+          <Maintenance/>
+          {/*<Intro/>*/}
+          {/*<Offer/>*/}
+          {/*<Results/>*/}
+          {/*<Strategy/>*/}
+          {/*<Step1/>*/}
+          {/*<Step2/>*/}
+          {/*<Step3/>*/}
+          {/*<ResultSection2/>*/}
+          {/*<DemoCall/>*/}
+          {/*<Footer/>*/}
       </div>
   )
 }
