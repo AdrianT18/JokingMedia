@@ -23,17 +23,17 @@ import Maintenance from "./maintanace";
 function App() {
   return(
       <div>
-          <Maintenance/>
-          {/*<Intro/>*/}
-          {/*<Offer/>*/}
-          {/*<Results/>*/}
-          {/*<Strategy/>*/}
-          {/*<Step1/>*/}
-          {/*<Step2/>*/}
-          {/*<Step3/>*/}
-          {/*<ResultSection2/>*/}
-          {/*<DemoCall/>*/}
-          {/*<Footer/>*/}
+          {/*<Maintenance/>*/}
+          <Intro/>
+          <Offer/>
+          <Results/>
+          <Strategy/>
+          <Step1/>
+          <Step2/>
+          <Step3/>
+          <ResultSection2/>
+          <DemoCall/>
+          <Footer/>
       </div>
   )
 }
