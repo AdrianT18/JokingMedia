@@ -11,6 +11,6 @@
 - [x] Add animations
 - [x] Make it responsive for desktop
 - [x] Make it responsive for laptop
-- [ ] Make it responsive for tablet
+- [x] Make it responsive for tablet
 - [x] Make it responsive for mobile
-- [ ] Host It
+- [x] Host It
